@@ -1,0 +1,13 @@
+{
+	"config": {
+		"theme": {
+			"currentTheme": "helloTheme",
+			"themes": [
+				"defaultTheme",
+				"helloTheme"
+			],
+			"baseTheme": "helloTheme"
+		},
+		"version": "6.7.0"
+	}
+}

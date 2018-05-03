@@ -1,0 +1,1523 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "5a9f-bc5d-837b-0ef7",
+			"initialized": true,
+			"props": {
+				"children": [
+					"1a3f-8c60-49e8-898d",
+					"321d-a7a8-9f71-7c76",
+					"736d-60dd-3762-23bb",
+					"d8d5-355c-d9ac-aabf"
+				],
+				"name": "my_id",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": false
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"flexDirection": "COLUMN",
+					"flexWrap": "NOWRAP",
+					"justifyContent": "FLEX_START",
+					"alignContent": "STRETCH",
+					"direction": "LTR"
+				},
+				"orientation": "PORTRAIT",
+				"paddingLeft": 0,
+				"paddingRight": 0,
+				"safeAreaEnabled": false
+			},
+			"version": "6.7.0"
+		},
+		{
+			"className": ".statusBar",
+			"id": "1a3f-8c60-49e8-898d",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "5a9f-bc5d-837b-0ef7"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"id": "321d-a7a8-9f71-7c76",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "5a9f-bc5d-837b-0ef7",
+				"title": "My ID Cards"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"title": "My ID Cards",
+				"visible": false
+			}
+		},
+		{
+			"className": ".scrollView",
+			"id": "d8d5-355c-d9ac-aabf",
+			"props": {
+				"children": [
+					"f41a-c147-e578-69f6",
+					"33af-984f-9470-9143"
+				],
+				"name": "container",
+				"parent": "5a9f-bc5d-837b-0ef7"
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "f41a-c147-e578-69f6",
+			"props": {
+				"children": [
+					"794b-41b0-f7e3-ef03",
+					"bff0-ae10-09c8-c17e",
+					"f45b-61bf-82f6-92e5",
+					"514e-8280-0542-1aff",
+					"ca35-2d45-e87b-beac",
+					"8710-2a16-9e1f-3b36",
+					"2145-fe24-0f62-34d3",
+					"371e-1787-aa27-ccbb",
+					"e2fc-41a8-5930-8036",
+					"f01f-ec94-0208-b521"
+				],
+				"name": "cardLayout",
+				"parent": "d8d5-355c-d9ac-aabf",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 370,
+				"left": 0,
+				"marginBottom": 20,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "794b-41b0-f7e3-ef03",
+			"props": {
+				"children": [
+					"bf1e-ced7-95c6-d9ef",
+					"80ee-f090-7840-7539",
+					"2011-2708-a1ba-d6b7"
+				],
+				"name": "rowLayout",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "bf1e-ced7-95c6-d9ef",
+			"props": {
+				"children": [],
+				"name": "oval",
+				"parent": "794b-41b0-f7e3-ef03",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "oval.png",
+				"usePageVariable": true,
+				"width": 30
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "80ee-f090-7840-7539",
+			"props": {
+				"children": [],
+				"name": "cardTitle1",
+				"parent": "794b-41b0-f7e3-ef03",
+				"text": "SmartCare",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 18,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"marginLeft": 5,
+				"text": "SmartCare",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "2011-2708-a1ba-d6b7",
+			"props": {
+				"children": [],
+				"name": "bag",
+				"parent": "794b-41b0-f7e3-ef03"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "bag.png",
+				"width": 28
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "bff0-ae10-09c8-c17e",
+			"props": {
+				"children": [
+					"f16b-6cba-d9bb-c005",
+					"d806-419a-85de-c903"
+				],
+				"name": "rowLayout_1",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 110,
+				"paddingBottom": 5,
+				"paddingLeft": 5,
+				"paddingRight": 5,
+				"paddingTop": 5,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "f16b-6cba-d9bb-c005",
+			"props": {
+				"children": [],
+				"name": "avatar",
+				"parent": "bff0-ae10-09c8-c17e",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 70,
+				"image": "avatar.png",
+				"usePageVariable": true,
+				"width": 70
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "d806-419a-85de-c903",
+			"props": {
+				"children": [
+					"b9bd-592b-7e56-7275",
+					"71ca-2305-916d-4587",
+					"d90a-f0aa-545f-7132",
+					"1987-7896-f125-1611",
+					"b4a0-af21-0d81-daa3"
+				],
+				"name": "info",
+				"parent": "bff0-ae10-09c8-c17e"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"alignContent": "STRETCH",
+					"justifyContent": "FLEX_START"
+				},
+				"height": null,
+				"paddingLeft": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "b9bd-592b-7e56-7275",
+			"props": {
+				"children": [],
+				"name": "fullname",
+				"parent": "d806-419a-85de-c903",
+				"text": "John Smart"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "John Smart",
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "71ca-2305-916d-4587",
+			"props": {
+				"children": [],
+				"name": "policyID1",
+				"parent": "d806-419a-85de-c903",
+				"text": "Policy ID",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"font": {
+					"size": 15,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "Policy ID",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "d90a-f0aa-545f-7132",
+			"props": {
+				"children": [],
+				"name": "policy_id_value",
+				"parent": "d806-419a-85de-c903",
+				"text": "545297503434"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "545297503434",
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "1987-7896-f125-1611",
+			"props": {
+				"children": [],
+				"name": "plan_id",
+				"parent": "d806-419a-85de-c903",
+				"text": "Plan ID"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"font": {
+					"size": 15,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "Plan ID",
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "b4a0-af21-0d81-daa3",
+			"props": {
+				"children": [],
+				"name": "plan_id_value",
+				"parent": "d806-419a-85de-c903",
+				"text": "35293"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "35293",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "f45b-61bf-82f6-92e5",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.5,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "514e-8280-0542-1aff",
+			"props": {
+				"children": [
+					"e28a-98a1-f2e9-50a4",
+					"528e-56a0-a7bf-58b5"
+				],
+				"name": "rowLayout_2",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "e28a-98a1-f2e9-50a4",
+			"props": {
+				"children": [],
+				"name": "dependents",
+				"parent": "514e-8280-0542-1aff",
+				"text": "Dependents",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": true,
+				"text": "Dependents",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "528e-56a0-a7bf-58b5",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "514e-8280-0542-1aff",
+				"text": "Jane Smart\nMicheal Smart"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": true,
+				"text": "Jane Smart\nMicheal Smart",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "ca35-2d45-e87b-beac",
+			"props": {
+				"children": [],
+				"name": "divider_1",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.5,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "8710-2a16-9e1f-3b36",
+			"props": {
+				"children": [
+					"2c62-46e7-1cf9-f82e",
+					"9a69-837f-6f8d-1e18"
+				],
+				"name": "rowLayout_3",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "2c62-46e7-1cf9-f82e",
+			"props": {
+				"children": [],
+				"name": "effectiveDate1",
+				"parent": "8710-2a16-9e1f-3b36",
+				"text": "Effective Date",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"text": "Effective Date",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "9a69-837f-6f8d-1e18",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "8710-2a16-9e1f-3b36",
+				"text": "May 01, 2018"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": false,
+				"text": "May 01, 2018",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "2145-fe24-0f62-34d3",
+			"props": {
+				"children": [],
+				"name": "divider_3",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.5,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "371e-1787-aa27-ccbb",
+			"props": {
+				"children": [
+					"8d70-81ea-c796-ff3b",
+					"2353-f31c-033f-fa3e"
+				],
+				"name": "rowLayout_4",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "8d70-81ea-c796-ff3b",
+			"props": {
+				"children": [],
+				"name": "expirationDate1",
+				"parent": "371e-1787-aa27-ccbb",
+				"text": "Expiration Date",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"text": "Expiration Date",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "2353-f31c-033f-fa3e",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "371e-1787-aa27-ccbb",
+				"text": "May 01, 2019"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": false,
+				"text": "May 01, 2019",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "e2fc-41a8-5930-8036",
+			"props": {
+				"children": [],
+				"name": "divider_4",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.5,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "f01f-ec94-0208-b521",
+			"props": {
+				"children": [
+					"5d3a-c921-9062-b652",
+					"90dc-e571-7631-315c",
+					"1640-0398-34d6-82fd"
+				],
+				"name": "rowLayout_5",
+				"parent": "f41a-c147-e578-69f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "FLEX_END"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "5d3a-c921-9062-b652",
+			"props": {
+				"children": [],
+				"name": "detail",
+				"parent": "f01f-ec94-0208-b521",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "detail.png",
+				"usePageVariable": true,
+				"width": 40
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "90dc-e571-7631-315c",
+			"props": {
+				"children": [],
+				"name": "share",
+				"parent": "f01f-ec94-0208-b521",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "share.png",
+				"usePageVariable": true,
+				"width": 40
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "1640-0398-34d6-82fd",
+			"props": {
+				"children": [],
+				"name": "download",
+				"parent": "f01f-ec94-0208-b521",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "download.png",
+				"usePageVariable": true,
+				"width": 40
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "33af-984f-9470-9143",
+			"props": {
+				"children": [
+					"7f06-83fa-15d6-4041",
+					"de40-a2f8-2ea8-00ef",
+					"a809-4c5c-99a0-de33",
+					"a1b3-c184-5c1a-9c7e",
+					"5601-c512-61ac-ce86",
+					"4500-8443-7e06-6b44",
+					"7291-8d88-aa87-989c",
+					"82e8-1d80-9347-6498",
+					"d5a4-a059-3b24-a9ba",
+					"7fbe-9bc8-9ac1-c9fa"
+				],
+				"name": "cardLayout_1",
+				"parent": "d8d5-355c-d9ac-aabf",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 370,
+				"left": 0,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "7f06-83fa-15d6-4041",
+			"props": {
+				"children": [
+					"29a1-8343-173f-6f2f",
+					"c8d8-87b3-04bc-cd91",
+					"0c6d-494a-7876-3681"
+				],
+				"name": "rowLayout",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "29a1-8343-173f-6f2f",
+			"props": {
+				"children": [],
+				"name": "oval",
+				"parent": "7f06-83fa-15d6-4041",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "oval.png",
+				"usePageVariable": true,
+				"width": 30
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "c8d8-87b3-04bc-cd91",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "7f06-83fa-15d6-4041",
+				"text": "SmartCare"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 18,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"marginLeft": 5,
+				"text": "SmartCare",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "0c6d-494a-7876-3681",
+			"props": {
+				"children": [],
+				"name": "bag",
+				"parent": "7f06-83fa-15d6-4041"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "car.png",
+				"width": 28
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "de40-a2f8-2ea8-00ef",
+			"props": {
+				"children": [
+					"2d7f-c33e-ac32-57d9",
+					"f0c4-91d6-5123-7041"
+				],
+				"name": "rowLayout_1",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 110,
+				"paddingBottom": 5,
+				"paddingLeft": 5,
+				"paddingRight": 5,
+				"paddingTop": 5,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "2d7f-c33e-ac32-57d9",
+			"props": {
+				"children": [],
+				"name": "avatar",
+				"parent": "de40-a2f8-2ea8-00ef",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 70,
+				"image": "avatar.png",
+				"usePageVariable": true,
+				"width": 70
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "f0c4-91d6-5123-7041",
+			"props": {
+				"children": [
+					"2c90-f920-17e8-a02f",
+					"3a89-5466-077a-07e5",
+					"94a9-830e-a800-4762",
+					"e167-a992-4718-a441",
+					"bccf-8377-5ade-c0c4"
+				],
+				"name": "info",
+				"parent": "de40-a2f8-2ea8-00ef"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"alignContent": "STRETCH",
+					"justifyContent": "FLEX_START"
+				},
+				"height": null,
+				"paddingLeft": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "2c90-f920-17e8-a02f",
+			"props": {
+				"children": [],
+				"name": "fullname",
+				"parent": "f0c4-91d6-5123-7041",
+				"text": "John Smart"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "John Smart",
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "3a89-5466-077a-07e5",
+			"props": {
+				"children": [],
+				"name": "policyID2",
+				"parent": "f0c4-91d6-5123-7041",
+				"text": "Policy ID",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"font": {
+					"size": 15,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "Policy ID",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "94a9-830e-a800-4762",
+			"props": {
+				"children": [],
+				"name": "policy_id_value",
+				"parent": "f0c4-91d6-5123-7041",
+				"text": "545297503434"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "545297503434",
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "e167-a992-4718-a441",
+			"props": {
+				"children": [],
+				"name": "plan_id",
+				"parent": "f0c4-91d6-5123-7041",
+				"text": "Plan ID"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"font": {
+					"size": 15,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "Plan ID",
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "bccf-8377-5ade-c0c4",
+			"props": {
+				"children": [],
+				"name": "plan_id_value",
+				"parent": "f0c4-91d6-5123-7041",
+				"text": "35294"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 20,
+				"text": "35294",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "a809-4c5c-99a0-de33",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.5,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "a1b3-c184-5c1a-9c7e",
+			"props": {
+				"children": [
+					"2c18-f8d2-6c26-21ba",
+					"615e-32c8-1719-7792"
+				],
+				"name": "rowLayout_2",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "2c18-f8d2-6c26-21ba",
+			"props": {
+				"children": [],
+				"name": "vinYearMake",
+				"parent": "a1b3-c184-5c1a-9c7e",
+				"text": "VIN\t\nYear | Make",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": true,
+				"text": "VIN\t\nYear | Make",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "615e-32c8-1719-7792",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "a1b3-c184-5c1a-9c7e",
+				"text": "123457890123457890\n2017 | Smart"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": true,
+				"text": "123457890123457890\n2017 | Smart",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "5601-c512-61ac-ce86",
+			"props": {
+				"children": [],
+				"name": "divider_1",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.5,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "4500-8443-7e06-6b44",
+			"props": {
+				"children": [
+					"947e-990a-f182-59e6",
+					"0800-b835-0e73-8bd9"
+				],
+				"name": "rowLayout_3",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "947e-990a-f182-59e6",
+			"props": {
+				"children": [],
+				"name": "effectiveDate2",
+				"parent": "4500-8443-7e06-6b44",
+				"text": "Effective Date",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"text": "Effective Date",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "0800-b835-0e73-8bd9",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "4500-8443-7e06-6b44",
+				"text": "May 01, 2018"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": false,
+				"text": "May 01, 2018",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "7291-8d88-aa87-989c",
+			"props": {
+				"children": [],
+				"name": "divider_3",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.5,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "82e8-1d80-9347-6498",
+			"props": {
+				"children": [
+					"54c7-6438-448c-87f5",
+					"e442-af94-7e7e-4f6a"
+				],
+				"name": "rowLayout_4",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "54c7-6438-448c-87f5",
+			"props": {
+				"children": [],
+				"name": "expirationDate2",
+				"parent": "82e8-1d80-9347-6498",
+				"text": "Expiration Date",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"text": "Expiration Date",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "e442-af94-7e7e-4f6a",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "82e8-1d80-9347-6498",
+				"text": "May 01, 2019"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": false,
+				"text": "May 01, 2019",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "d5a4-a059-3b24-a9ba",
+			"props": {
+				"children": [],
+				"name": "divider_4",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.5,
+				"backgroundColor": "rgba( 151, 151, 151, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "7fbe-9bc8-9ac1-c9fa",
+			"props": {
+				"children": [
+					"537a-6285-eb70-1edd",
+					"2777-f795-9f22-5cda",
+					"8ada-92c1-2ae2-61a2"
+				],
+				"name": "rowLayout_5",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "FLEX_END"
+				},
+				"height": 50,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "537a-6285-eb70-1edd",
+			"props": {
+				"children": [],
+				"name": "detail",
+				"parent": "7fbe-9bc8-9ac1-c9fa",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "detail.png",
+				"usePageVariable": true,
+				"width": 40
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "2777-f795-9f22-5cda",
+			"props": {
+				"children": [],
+				"name": "share",
+				"parent": "7fbe-9bc8-9ac1-c9fa",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "share.png",
+				"usePageVariable": true,
+				"width": 40
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "8ada-92c1-2ae2-61a2",
+			"props": {
+				"children": [],
+				"name": "download",
+				"parent": "7fbe-9bc8-9ac1-c9fa",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "download.png",
+				"usePageVariable": true,
+				"width": 40
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "736d-60dd-3762-23bb",
+			"props": {
+				"children": [
+					"df9c-07ac-7fcd-6a6c"
+				],
+				"name": "header",
+				"parent": "5a9f-bc5d-837b-0ef7",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"height": 80,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "df9c-07ac-7fcd-6a6c",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "736d-60dd-3762-23bb",
+				"text": "My ID Cards",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 26,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"marginTop": 10,
+				"text": "My ID Cards",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

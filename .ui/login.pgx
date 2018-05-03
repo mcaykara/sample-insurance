@@ -1,0 +1,685 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "cd1d-8047-e997-54d8",
+			"initialized": true,
+			"props": {
+				"children": [
+					"9e38-506b-2718-659e",
+					"2e24-dc23-1880-eaab",
+					"a271-4280-396e-d53f"
+				],
+				"name": "login",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 159, 38, 236, 1 )",
+				"orientation": "PORTRAIT",
+				"paddingBottom": 30,
+				"paddingLeft": 30,
+				"paddingRight": 30,
+				"paddingTop": 30
+			},
+			"version": "6.7.0"
+		},
+		{
+			"className": ".statusBar",
+			"hiddenComponent": false,
+			"id": "9e38-506b-2718-659e",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "cd1d-8047-e997-54d8"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"hiddenComponent": false,
+			"id": "2e24-dc23-1880-eaab",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "cd1d-8047-e997-54d8",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001",
+				"visible": false
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "a271-4280-396e-d53f",
+			"props": {
+				"children": [
+					"f794-7ac9-e6ad-10fa",
+					"6970-a565-34ee-210d",
+					"4a28-a4ca-2cc8-13f6"
+				],
+				"name": "container",
+				"parent": "cd1d-8047-e997-54d8",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "f794-7ac9-e6ad-10fa",
+			"props": {
+				"children": [
+					"ec58-e86b-affb-0d4a"
+				],
+				"name": "banner",
+				"parent": "a271-4280-396e-d53f",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"flexGrow": 0.4
+				},
+				"height": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": "#LoginPage.title",
+			"id": "ec58-e86b-affb-0d4a",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "f794-7ac9-e6ad-10fa",
+				"text": "INSURANCE",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 30,
+					"bold": false,
+					"italic": false,
+					"family": "CenturyGothic",
+					"weight": "Regular"
+				},
+				"text": "INSURANCE",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "6970-a565-34ee-210d",
+			"props": {
+				"children": [
+					"bb0e-8890-2f28-f79b",
+					"cb4b-15b4-941f-d6e0",
+					"be1e-cdb5-b1b8-3186",
+					"198b-30c0-b538-b168",
+					"e03d-64cb-5b16-8e85",
+					"6a4b-f9b6-b9f9-5b19",
+					"96c6-8523-767b-027d",
+					"37f8-33aa-f4a0-55b8"
+				],
+				"name": "loginForm",
+				"parent": "a271-4280-396e-d53f",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": "#LoginPage.divider",
+			"hiddenComponent": false,
+			"id": "be1e-cdb5-b1b8-3186",
+			"props": {
+				"children": [
+					"b8af-3538-ee37-4478",
+					"d9d1-566b-5d67-beef"
+				],
+				"name": "passwordInput",
+				"parent": "6970-a565-34ee-210d",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"justifyContent": "FLEX_START",
+					"direction": "LTR",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW"
+				},
+				"height": 60,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": "#LoginPage.passwordIcon",
+			"hiddenComponent": false,
+			"id": "b8af-3538-ee37-4478",
+			"props": {
+				"children": [],
+				"name": "imageView1",
+				"parent": "be1e-cdb5-b1b8-3186",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {}
+		},
+		{
+			"className": "#LoginPage.passwordInput",
+			"id": "d9d1-566b-5d67-beef",
+			"props": {
+				"children": [],
+				"hint": "Password",
+				"isPassword": true,
+				"name": "passwordTextInput",
+				"parent": "be1e-cdb5-b1b8-3186",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {}
+		},
+		{
+			"className": "#LoginPage.divider",
+			"id": "cb4b-15b4-941f-d6e0",
+			"props": {
+				"children": [],
+				"name": "flexLayout1",
+				"parent": "6970-a565-34ee-210d"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "bb0e-8890-2f28-f79b",
+			"props": {
+				"children": [
+					"4267-197a-9424-ad43",
+					"26ea-1854-6617-5656"
+				],
+				"name": "usernameInput",
+				"parent": "6970-a565-34ee-210d",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"justifyContent": "FLEX_START",
+					"direction": "LTR",
+					"flexWrap": "NOWRAP",
+					"flexDirection": "ROW"
+				},
+				"height": 60,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": "#LoginPage.usernameIcon",
+			"hiddenComponent": false,
+			"id": "4267-197a-9424-ad43",
+			"props": {
+				"children": [],
+				"name": "imageView1",
+				"parent": "bb0e-8890-2f28-f79b",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {}
+		},
+		{
+			"className": "#LoginPage.usernameInput",
+			"id": "26ea-1854-6617-5656",
+			"props": {
+				"children": [],
+				"hint": "Username",
+				"name": "usernameTextInput",
+				"parent": "bb0e-8890-2f28-f79b",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {}
+		},
+		{
+			"className": "#LoginPage.divider",
+			"hiddenComponent": false,
+			"id": "198b-30c0-b538-b168",
+			"props": {
+				"children": [],
+				"name": "flexLayout1_1",
+				"parent": "6970-a565-34ee-210d"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "e03d-64cb-5b16-8e85",
+			"props": {
+				"children": [
+					"5192-0492-9e25-7e8d",
+					"f56d-65f5-d021-6f98"
+				],
+				"name": "rememberMe",
+				"parent": "6970-a565-34ee-210d"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 45,
+				"paddingTop": 10,
+				"width": null
+			}
+		},
+		{
+			"className": "#LoginPage.rememberMeTitle",
+			"hiddenComponent": false,
+			"id": "5192-0492-9e25-7e8d",
+			"props": {
+				"children": [
+					"d84d-9d29-6ebc-71ee"
+				],
+				"name": "title",
+				"parent": "e03d-64cb-5b16-8e85"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "f56d-65f5-d021-6f98",
+			"props": {
+				"children": [
+					"9606-02d4-9d42-d9f8"
+				],
+				"name": "changer",
+				"parent": "e03d-64cb-5b16-8e85"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"justifyContent": "CENTER",
+					"alignItems": "FLEX_START",
+					"direction": "LTR",
+					"flexDirection": "ROW",
+					"alignContent": "CENTER",
+					"flexWrap": "NOWRAP"
+				},
+				"height": null,
+				"width": 50
+			}
+		},
+		{
+			"className": "#LoginPage.rememberMeTitle",
+			"id": "d84d-9d29-6ebc-71ee",
+			"props": {
+				"children": [],
+				"name": "rememberMeTitle",
+				"parent": "5192-0492-9e25-7e8d",
+				"text": "Remember Me",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".switch",
+			"id": "9606-02d4-9d42-d9f8",
+			"props": {
+				"children": [],
+				"name": "switch1",
+				"parent": "f56d-65f5-d021-6f98",
+				"toggle": false,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"minHeight": null,
+				"minWidth": null,
+				"thumbOnColor": "rgba( 97, 109, 252, 1 )",
+				"toggleOnColor": "rgba( 89, 118, 254, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "6a4b-f9b6-b9f9-5b19",
+			"props": {
+				"children": [
+					"9ebd-b53c-8239-64c2",
+					"cd47-1490-7521-255a"
+				],
+				"name": "fingerprint",
+				"parent": "6970-a565-34ee-210d"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"justifyContent": "FLEX_START"
+				},
+				"height": 45,
+				"paddingTop": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "9ebd-b53c-8239-64c2",
+			"props": {
+				"children": [
+					"67a9-b922-6d43-f6c8"
+				],
+				"name": "title",
+				"parent": "6a4b-f9b6-b9f9-5b19"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"width": null
+			}
+		},
+		{
+			"className": "#LoginPage.fingerPrintTitle",
+			"id": "67a9-b922-6d43-f6c8",
+			"props": {
+				"children": [],
+				"name": "fingerPrintTitle",
+				"parent": "9ebd-b53c-8239-64c2",
+				"text": "Use Fingerprint Authentication",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "cd47-1490-7521-255a",
+			"props": {
+				"children": [
+					"77bc-ce85-eb3c-c30f"
+				],
+				"name": "changer",
+				"parent": "6a4b-f9b6-b9f9-5b19"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"justifyContent": "CENTER",
+					"alignItems": "FLEX_START",
+					"direction": "LTR",
+					"flexDirection": "ROW",
+					"alignContent": "CENTER",
+					"flexWrap": "NOWRAP"
+				},
+				"height": null,
+				"width": 50
+			}
+		},
+		{
+			"className": ".switch",
+			"id": "77bc-ce85-eb3c-c30f",
+			"props": {
+				"children": [],
+				"name": "switch1",
+				"parent": "cd47-1490-7521-255a",
+				"toggle": false,
+				"usePageVariable": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"minHeight": null,
+				"minWidth": null,
+				"thumbOnColor": "rgba( 97, 109, 252, 1 )",
+				"toggleOnColor": "rgba( 89, 118, 254, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "96c6-8523-767b-027d",
+			"props": {
+				"children": [
+					"55c1-1406-be4d-f96c"
+				],
+				"name": "loginButton",
+				"parent": "6970-a565-34ee-210d"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"justifyContent": "FLEX_START"
+				},
+				"height": 60,
+				"paddingTop": 10,
+				"width": null
+			}
+		},
+		{
+			"className": "#LoginPage.loginButton",
+			"id": "55c1-1406-be4d-f96c",
+			"props": {
+				"children": [],
+				"name": "loginButton",
+				"parent": "96c6-8523-767b-027d",
+				"text": "Login",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "37f8-33aa-f4a0-55b8",
+			"props": {
+				"children": [
+					"0f51-86cd-6e32-a751"
+				],
+				"name": "forgotPassword",
+				"parent": "6970-a565-34ee-210d"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"alignItems": "FLEX_START",
+					"alignContent": "FLEX_START",
+					"justifyContent": "FLEX_END",
+					"alignSelf": "AUTO",
+					"direction": "LTR"
+				},
+				"height": 45,
+				"paddingTop": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "0f51-86cd-6e32-a751",
+			"props": {
+				"children": [],
+				"name": "forgotPasswordTitle",
+				"parent": "37f8-33aa-f4a0-55b8",
+				"text": "Forgot Password",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"alignSelf": "FLEX_START",
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 12.8,
+					"bold": false,
+					"italic": false,
+					"family": "Default",
+					"style": "Regular"
+				},
+				"height": 30,
+				"text": "Forgot Password",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "4a28-a4ca-2cc8-13f6",
+			"props": {
+				"children": [
+					"52ca-9fcd-00d3-6451",
+					"0971-7f9a-7af7-f2a1"
+				],
+				"name": "contact",
+				"parent": "a271-4280-396e-d53f",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"justifyContent": "CENTER"
+				},
+				"height": 30,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "52ca-9fcd-00d3-6451",
+			"props": {
+				"children": [],
+				"name": "clientContactTitle",
+				"parent": "4a28-a4ca-2cc8-13f6",
+				"text": "Not a client? Contact Us for a Quote",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"borderColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "CenturyGothic"
+				},
+				"height": null,
+				"ios": {
+					"shadowOpacity": 0
+				},
+				"multiline": true,
+				"text": "Not a client? Contact Us for a Quote",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "0971-7f9a-7af7-f2a1",
+			"props": {
+				"children": [],
+				"name": "flexLayout2",
+				"parent": "4a28-a4ca-2cc8-13f6"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"height": 1,
+				"width": null
+			}
+		}
+	]
+}

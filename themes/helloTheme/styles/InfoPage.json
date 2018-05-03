@@ -1,0 +1,46 @@
+{
+  "#InfoPage": {
+    ".title": {
+        "visible": true,
+        "multiline": false,
+        "alpha": 1,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "borderColor": "#FFFFFF",
+        "borderWidth": 0,
+        "textColor": "#000000",
+        "textAlignment": "MIDCENTER",
+        "font": {
+          "size": 26,
+          "bold": false,
+          "italic": false,
+          "family": "Avenir",
+          "weight": "Book"
+        },
+        "flexProps": {
+          "alignSelf": "AUTO",
+          "positionType": "RELATIVE",
+          "flexGrow": 1
+        },
+        "marginTop": 10
+    },
+    ".listItemTitle": {
+        "visible": true,
+        "multiline": false,
+        "alpha": 0.8,
+        "textColor": "#000000",
+        "textAlignment": "MIDLEFT",
+        "font": {
+          "size": 16,
+          "bold": false,
+          "italic": false,
+          "family": "Avenir",
+          "weight": "Multiple"
+        },
+        "flexProps": {
+          "alignSelf": "AUTO",
+          "positionType": "RELATIVE",
+          "flexGrow": 1
+        }
+    }
+  }
+}

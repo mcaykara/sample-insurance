@@ -1,0 +1,887 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "2f80-fcbc-70c6-ea6e",
+			"initialized": true,
+			"props": {
+				"children": [
+					"d506-5555-e26b-fe10",
+					"a61d-d25c-e2eb-6309",
+					"a550-c24f-abf8-80c7",
+					"b031-4858-1212-4d4a"
+				],
+				"name": "claims",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": false
+			},
+			"type": "Page",
+			"userProps": {
+				"safeAreaEnabled": false
+			},
+			"version": "6.7.0"
+		},
+		{
+			"className": ".statusBar",
+			"id": "d506-5555-e26b-fe10",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "2f80-fcbc-70c6-ea6e"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
+			"hiddenComponent": true,
+			"id": "a61d-d25c-e2eb-6309",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "2f80-fcbc-70c6-ea6e",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001",
+				"visible": false
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "a550-c24f-abf8-80c7",
+			"props": {
+				"children": [
+					"d2aa-601f-90e1-3ed4"
+				],
+				"name": "header",
+				"parent": "2f80-fcbc-70c6-ea6e"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"height": 80,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "d2aa-601f-90e1-3ed4",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "a550-c24f-abf8-80c7",
+				"text": "Claims",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 26,
+					"bold": false,
+					"italic": false,
+					"family": "Default",
+					"style": "Regular"
+				},
+				"height": null,
+				"marginTop": 10,
+				"text": "Claims",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".scrollView",
+			"id": "b031-4858-1212-4d4a",
+			"props": {
+				"children": [
+					"dca0-9599-2e36-feb9",
+					"d8f4-4aa8-eec6-8581",
+					"ce1c-8384-e408-5fa7",
+					"4422-d473-75d1-535a",
+					"c91b-6e00-8955-e17a",
+					"32ae-bd14-9278-983e"
+				],
+				"name": "container",
+				"parent": "2f80-fcbc-70c6-ea6e",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"align": "VERTICAL",
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH",
+					"alignItems": "STRETCH"
+				},
+				"height": null,
+				"ios": {
+					"scrollBarEnabled": false
+				},
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "dca0-9599-2e36-feb9",
+			"props": {
+				"children": [
+					"d4f1-51fb-02d8-3710",
+					"d5d0-4605-e512-1fbf",
+					"bc0b-6968-0a15-116f"
+				],
+				"name": "row",
+				"parent": "b031-4858-1212-4d4a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "COLUMN"
+				},
+				"height": 120,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "d4f1-51fb-02d8-3710",
+			"props": {
+				"children": [
+					"559f-0c1e-19f6-fc39",
+					"1642-0e19-9a31-4301"
+				],
+				"name": "row",
+				"parent": "dca0-9599-2e36-feb9"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 40,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "559f-0c1e-19f6-fc39",
+			"props": {
+				"children": [],
+				"name": "itemTitle1",
+				"parent": "d4f1-51fb-02d8-3710",
+				"text": "SMART PHARMACY",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 2.5
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Medium"
+				},
+				"height": null,
+				"text": "SMART PHARMACY",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "1642-0e19-9a31-4301",
+			"props": {
+				"children": [],
+				"name": "price",
+				"parent": "d4f1-51fb-02d8-3710",
+				"text": "$120.48"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Medium"
+				},
+				"height": null,
+				"text": "$120.48",
+				"textAlignment": "MIDRIGHT",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "d5d0-4605-e512-1fbf",
+			"props": {
+				"children": [
+					"340d-e3bd-5b89-81f4",
+					"9b1a-b9cb-1f74-5b81"
+				],
+				"name": "row_1",
+				"parent": "dca0-9599-2e36-feb9"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 40,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "340d-e3bd-5b89-81f4",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "d5d0-4605-e512-1fbf",
+				"text": "Pharmacy"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"text": "Pharmacy",
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "9b1a-b9cb-1f74-5b81",
+			"props": {
+				"children": [],
+				"name": "date",
+				"parent": "d5d0-4605-e512-1fbf",
+				"text": "May 09, 2018"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"text": "May 09, 2018",
+				"textAlignment": "MIDRIGHT",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "bc0b-6968-0a15-116f",
+			"props": {
+				"children": [
+					"142c-7e98-2088-1f24"
+				],
+				"name": "row_2",
+				"parent": "dca0-9599-2e36-feb9"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 25,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "142c-7e98-2088-1f24",
+			"props": {
+				"children": [],
+				"name": "inProcess",
+				"parent": "bc0b-6968-0a15-116f",
+				"text": "In Process",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"text": "In Process",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 245, 166, 35, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "d8f4-4aa8-eec6-8581",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "b031-4858-1212-4d4a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.3,
+				"backgroundColor": "rgba( 29, 29, 38, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "ce1c-8384-e408-5fa7",
+			"props": {
+				"children": [
+					"98d5-c97b-a7c0-2854",
+					"ae4e-b970-b74f-37c5",
+					"e2f0-8f8f-fe03-e435"
+				],
+				"name": "row_2",
+				"parent": "b031-4858-1212-4d4a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "COLUMN"
+				},
+				"height": 120,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "98d5-c97b-a7c0-2854",
+			"props": {
+				"children": [
+					"28eb-84cf-3c08-9305",
+					"89e1-0467-83d0-bb55"
+				],
+				"name": "row",
+				"parent": "ce1c-8384-e408-5fa7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 40,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "28eb-84cf-3c08-9305",
+			"props": {
+				"children": [],
+				"name": "itemTitle2",
+				"parent": "98d5-c97b-a7c0-2854",
+				"text": "JOHN SMART, M.D.",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 2.5
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Medium"
+				},
+				"height": null,
+				"text": "JOHN SMART, M.D.",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "89e1-0467-83d0-bb55",
+			"props": {
+				"children": [],
+				"name": "price",
+				"parent": "98d5-c97b-a7c0-2854",
+				"text": "$99.50"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Medium"
+				},
+				"height": null,
+				"text": "$99.50",
+				"textAlignment": "MIDRIGHT",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "ae4e-b970-b74f-37c5",
+			"props": {
+				"children": [
+					"6b45-c9e5-d02a-d047",
+					"3f80-7908-a775-ae88"
+				],
+				"name": "row_1",
+				"parent": "ce1c-8384-e408-5fa7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 40,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "6b45-c9e5-d02a-d047",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "ae4e-b970-b74f-37c5",
+				"text": "Medical"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"text": "Medical",
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "3f80-7908-a775-ae88",
+			"props": {
+				"children": [],
+				"name": "date",
+				"parent": "ae4e-b970-b74f-37c5",
+				"text": "Apr 12, 2018"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"text": "Apr 12, 2018",
+				"textAlignment": "MIDRIGHT",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "e2f0-8f8f-fe03-e435",
+			"props": {
+				"children": [
+					"a568-2bfc-96df-f671"
+				],
+				"name": "row_2",
+				"parent": "ce1c-8384-e408-5fa7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 25,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "a568-2bfc-96df-f671",
+			"props": {
+				"children": [],
+				"name": "completed",
+				"parent": "e2f0-8f8f-fe03-e435",
+				"text": "Completed",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"text": "Completed",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 30, 124, 40, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "4422-d473-75d1-535a",
+			"props": {
+				"children": [],
+				"name": "divider_1",
+				"parent": "b031-4858-1212-4d4a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.3,
+				"backgroundColor": "rgba( 29, 29, 38, 1 )",
+				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "c91b-6e00-8955-e17a",
+			"props": {
+				"children": [
+					"e31b-f10b-8779-68c0",
+					"475a-11df-1ab0-96a5",
+					"5822-52d0-2dbc-aa35"
+				],
+				"name": "row_3",
+				"parent": "b031-4858-1212-4d4a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "COLUMN"
+				},
+				"height": 120,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "e31b-f10b-8779-68c0",
+			"props": {
+				"children": [
+					"a50c-a91f-d08f-3630",
+					"edc5-48a6-f777-320e"
+				],
+				"name": "row",
+				"parent": "c91b-6e00-8955-e17a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 40,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "a50c-a91f-d08f-3630",
+			"props": {
+				"children": [],
+				"name": "itemTitle3",
+				"parent": "e31b-f10b-8779-68c0",
+				"text": "SMART HOSPITAL",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 2.5
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Medium"
+				},
+				"height": null,
+				"text": "SMART HOSPITAL",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "edc5-48a6-f777-320e",
+			"props": {
+				"children": [],
+				"name": "price",
+				"parent": "e31b-f10b-8779-68c0",
+				"text": "$198.34"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Medium"
+				},
+				"height": null,
+				"text": "$198.34",
+				"textAlignment": "MIDRIGHT",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "475a-11df-1ab0-96a5",
+			"props": {
+				"children": [
+					"9e65-4ff2-291b-0038",
+					"e0c4-da3f-cfb4-ad30"
+				],
+				"name": "row_1",
+				"parent": "c91b-6e00-8955-e17a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 40,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "9e65-4ff2-291b-0038",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "475a-11df-1ab0-96a5",
+				"text": "Medical"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"text": "Medical",
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "e0c4-da3f-cfb4-ad30",
+			"props": {
+				"children": [],
+				"name": "date",
+				"parent": "475a-11df-1ab0-96a5",
+				"text": "Mar 05, 2018"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"text": "Mar 05, 2018",
+				"textAlignment": "MIDRIGHT",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "5822-52d0-2dbc-aa35",
+			"props": {
+				"children": [
+					"a04c-933d-6952-0dde"
+				],
+				"name": "row_2",
+				"parent": "c91b-6e00-8955-e17a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 25,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"id": "a04c-933d-6952-0dde",
+			"props": {
+				"children": [],
+				"name": "rejected",
+				"parent": "5822-52d0-2dbc-aa35",
+				"text": "Rejected",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": null,
+				"text": "Rejected",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 227, 0, 0, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "32ae-bd14-9278-983e",
+			"props": {
+				"children": [],
+				"name": "divider_2",
+				"parent": "b031-4858-1212-4d4a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.3,
+				"backgroundColor": "rgba( 29, 29, 38, 1 )",
+				"height": 1,
+				"width": null
+			}
+		}
+	]
+}

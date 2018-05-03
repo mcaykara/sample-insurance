@@ -1,0 +1,23 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"hiddenComponent": false,
+			"id": "42d0-e5dc-4696-3e3f",
+			"props": {
+				"children": [],
+				"name": "header1",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "RELATIVE"
+				}
+			}
+		}
+	]
+}
