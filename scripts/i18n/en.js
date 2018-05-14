@@ -66,6 +66,8 @@ SMF.i18n.defineLanguage('en', {
 		"loginButtonText": "Giriş",
 		"forgotPasswordTitle": "Şifremi Unuttum",
 		"clientContactTitle": "Müşterimiz değil misiniz? Bizden teklif alın",
+		"loginSuccessAlertMessage": "You have been successfully logged in!",
+		"loginFailedAlertMessage": "Login Failed"
 	},
 	"myIDPage":{ 
 		"title": "My ID Cards",
@@ -80,7 +82,7 @@ SMF.i18n.defineLanguage('en', {
 		Year | Make`,
 	},
 	"claimsPage": {
-		"title": "Claims",
+		"title": "Claim",
 		"itemTitle1": "SMART PHARMACY",
 		"itemTitle2": "JOHN SMART, M.D.",
 		"itemTitle3": "SMART HOSPITAL",

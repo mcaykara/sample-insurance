@@ -41,6 +41,35 @@
           "positionType": "RELATIVE",
           "flexGrow": 1
         }
+    },
+    ".listItemIcon": {
+        "visible": true,
+        "width": 35,
+        "height": null
+    },
+    ".divider": {
+        "height": 1,
+        "marginLeft": 20,
+        "marginRight":20,
+        "backgroundColor": "#979797",
+        "alpha": 0.5,
+        "width": null,
+        "flexProps": {
+          "alignSelf": "AUTO",
+          "positionType": "RELATIVE"
+        }
+    },
+    ".switch": {
+      "thumbOffColor": "#883EF0",
+      "thumbOnColor": "#883EF0",
+      "alpha": 1,
+      "minHeight": 31,
+      "minWidth": 51,
+      "visible": true,
+      "flexProps": {
+        "alignSelf": "CENTER",
+        "positionType": "RELATIVE"
+      }
     }
   }
 }

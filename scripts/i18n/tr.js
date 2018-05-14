@@ -64,6 +64,8 @@ SMF.i18n.defineLanguage('tr', {
 		"loginButtonText": "Giriş",
 		"forgotPasswordTitle": "Şifremi Unuttum",
 		"clientContactTitle": "Müşteri değilmisiniz? Bizden teklif alın",
+		"loginSuccessAlertMessage": "Başarıyla giriş yaptınız!",
+		"loginFailedAlertMessage": "Giriş Başarısız!"
 	},
 	"myIDPage":{ 
 		"title": "Kimlik Kartlarım",

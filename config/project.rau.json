@@ -1,10 +1,10 @@
 {
     "config": {
         "rau": {
-            "formatVersion": "1.0.2",
+            "formatVersion": "1.2.0",
             "hashType": "md5",
             "profileKey": "lESjCW8rsq4Ya4ETqBt79yShdM8LiZX7",
-            "revision": 2,
+            "revision": 1,
             "channels": ["production", "test"],
             "meta": {
                 "whatIsWritten in data": "as data object in here",

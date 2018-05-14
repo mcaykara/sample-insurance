@@ -1,4 +1,5 @@
 /* globals lang */
+require("./theme");
 require("i18n/i18n.js"); // Generates global lang object
 
 const Application = require("sf-core/application");
@@ -6,8 +7,19 @@ const Router = require("sf-core/ui/router");
 const TabBarItem = require("sf-core/ui/tabbaritem");
 const Image = require("sf-core/ui/image");
 const BottomTabBar = require("sf-core/ui/bottomtabbar");
+const InstaBug = require("sf-plugin-instabug");
+const Color = require("sf-core/ui/color");
+const Navigator = require("sf-core/ui/navigator");
+const Data = require('sf-core/data');
+const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 
-require("./theme");
+
+if(!Data.getBooleanVariable('instaBugLoaded'))
+{
+    InstaBug.build("3befcc60214c7d4f020f466763e1eed0", InstaBug.InvocationEvent.SHAKE);
+    InstaBug.showIntroMessage();
+    Data.setBooleanVariable('instaBugLoaded',true); 
+}
 
 // Set uncaught exception handler, all exceptions that are not caught will
 // trigger onUnhandledError callback.
@@ -19,41 +31,77 @@ Application.onUnhandledError = function(e) {
 };
 
 // Define routes and go to initial page of application
-Router.add("login", require("./pages/login"), true);
+const navigator = new Navigator();
+navigator.add("login", require("./pages/login"));
+navigator.go("login");
 
-var myTab = new BottomTabBar();
+global.tabBar = null;
+global.tabBar = new BottomTabBar({
+    backgroundColor: Color.create("#F8F8F8"),
+    itemColor: {normal: Color.create(80, 0, 0, 0), selected: Color.create("#893EF1")}
+});
 
-myTab.add('home', new TabBarItem({
-    title:  lang["tabs"]["home"],
-    icon: Image.createFromFile("images://home.png"),
-    route: require('pages/home')
-}));
+global.tabBar.children = {};
 
-myTab.add('my_id', new TabBarItem({
-    title:  lang["tabs"]["my_id"],
+const homeNavigator = new Navigator();
+homeNavigator.add("index", require("./pages/home"));
+homeNavigator.go("index");
+global.tabBar.children["home"] = new TabBarItem({
+    title: lang["tabs"]["home"],
+    icon: { normal: Image.createFromFile("images://home.png"), selected: Image.createFromFile("images://home.png") },
+    route: homeNavigator
+});
+
+const myIDNavigator = new Navigator();
+myIDNavigator.add("index", require("./pages/my_id"));
+myIDNavigator.go("index");
+global.tabBar.children["my_id"] = new TabBarItem({
+    title: lang["tabs"]["my_id"],
     icon: Image.createFromFile("images://my_id.png"),
-    route: require('pages/my_id')
-}));
+    route: myIDNavigator
+});
 
-myTab.add('claims', new TabBarItem({
-    title:  lang["tabs"]["claims"],
+const claimsNavigator = new Navigator();
+claimsNavigator.add("index", require("./pages/claims"));
+claimsNavigator.go("index");
+global.tabBar.children["claims"] = new TabBarItem({
+    title: lang["tabs"]["claims"],
     icon: Image.createFromFile("images://claims.png"),
-    route: require('pages/claims')
-}));
+    route: claimsNavigator
+});
 
-myTab.add('provider_search', new TabBarItem({
-    title:  lang["tabs"]["providers"],
+const providerSearchNavigator = new Navigator();
+providerSearchNavigator.add("index", require("./pages/provider_search"));
+providerSearchNavigator.add("providers", require("./pages/providers"));
+providerSearchNavigator.add("providers_map", require("./pages/providers_map"));
+providerSearchNavigator.add("provider", require("./pages/provider"));
+providerSearchNavigator.go("index");
+global.tabBar.children["provider_search"] = new TabBarItem({
+    title: lang["tabs"]["providers"],
     icon: Image.createFromFile("images://providers.png"),
-    route: require('pages/provider_search')
-}));
+    route: providerSearchNavigator
+});
 
-myTab.add('info', new TabBarItem({
+const infoNavigator = new Navigator();
+infoNavigator.add("index", require("./pages/info"));
+infoNavigator.add("library", require("./pages/library"));
+infoNavigator.go("index");
+global.tabBar.children["info"] = new TabBarItem({
     title: lang["tabs"]["info"],
     icon: Image.createFromFile("images://info.png"),
-    route: require('pages/info')
-}));
+    route: infoNavigator
+});
 
-myTab.setIndex('home');
-Router.add('tabs', myTab);
+componentContextPatch(global.tabBar, "bottomtabbar");
 
+global.tabBar.add("home", global.tabBar.children["home"]);
+global.tabBar.add("my_id", global.tabBar.children["my_id"]);
+global.tabBar.add("claims", global.tabBar.children["claims"]);
+global.tabBar.add("provider_search", global.tabBar.children["provider_search"]);
+global.tabBar.add("info", global.tabBar.children["info"]);
+
+global.tabBar.setIndex("home");
+
+Router.add("tabs", global.tabBar);
+Router.add("login", navigator);
 Router.go("tabs");

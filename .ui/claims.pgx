@@ -12,15 +12,17 @@
 					"b031-4858-1212-4d4a"
 				],
 				"name": "claims",
-				"orientation": "PORTRAIT",
+				"orientation": "AUTO",
 				"parent": null,
-				"safeAreaEnabled": false
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"safeAreaEnabled": false
+				"backgroundColor": "rgba( 248, 248, 248, 1 )",
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
 			},
-			"version": "6.7.0"
+			"version": "6.7.1"
 		},
 		{
 			"className": ".statusBar",
@@ -32,7 +34,11 @@
 				"parent": "2f80-fcbc-70c6-ea6e"
 			},
 			"type": "StatusBar",
-			"userProps": {}
+			"userProps": {
+				"android": {
+					"color": "rgba( 255, 255, 255, 1 )"
+				}
+			}
 		},
 		{
 			"className": ".headerBar",
@@ -57,7 +63,7 @@
 			"id": "a550-c24f-abf8-80c7",
 			"props": {
 				"children": [
-					"d2aa-601f-90e1-3ed4"
+					"24f1-f9f1-5237-8b99"
 				],
 				"name": "header",
 				"parent": "2f80-fcbc-70c6-ea6e"
@@ -65,39 +71,11 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"height": 80,
-				"width": null
-			}
-		},
-		{
-			"className": ".label",
-			"id": "d2aa-601f-90e1-3ed4",
-			"props": {
-				"children": [],
-				"name": "title",
-				"parent": "a550-c24f-abf8-80c7",
-				"text": "Claims",
-				"usePageVariable": true
-			},
-			"type": "TextView",
-			"userProps": {
-				"alpha": 0.8,
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
-					"flexGrow": 1
+					"justifyContent": "FLEX_START",
+					"alignContent": "STRETCH"
 				},
-				"font": {
-					"size": 26,
-					"bold": false,
-					"italic": false,
-					"family": "Default",
-					"style": "Regular"
-				},
-				"height": null,
-				"marginTop": 10,
-				"text": "Claims",
-				"textAlignment": "MIDCENTER",
-				"usePageVariable": true,
+				"height": 50,
 				"width": null
 			}
 		},
@@ -110,8 +88,7 @@
 					"d8f4-4aa8-eec6-8581",
 					"ce1c-8384-e408-5fa7",
 					"4422-d473-75d1-535a",
-					"c91b-6e00-8955-e17a",
-					"32ae-bd14-9278-983e"
+					"c91b-6e00-8955-e17a"
 				],
 				"name": "container",
 				"parent": "2f80-fcbc-70c6-ea6e",
@@ -129,6 +106,8 @@
 				"ios": {
 					"scrollBarEnabled": false
 				},
+				"paddingLeft": 20,
+				"paddingRight": 20,
 				"usePageVariable": true,
 				"width": null
 			}
@@ -151,9 +130,9 @@
 				"flexProps": {
 					"flexDirection": "COLUMN"
 				},
-				"height": 120,
-				"paddingLeft": 10,
-				"paddingRight": 10,
+				"height": 100,
+				"paddingBottom": 5,
+				"paddingTop": 5,
 				"width": null
 			}
 		},
@@ -174,7 +153,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 40,
+				"height": 30,
 				"width": null
 			}
 		},
@@ -254,7 +233,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 40,
+				"height": 25,
 				"width": null
 			}
 		},
@@ -331,7 +310,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 25,
+				"height": 30,
 				"width": null
 			}
 		},
@@ -377,7 +356,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"alpha": 0.3,
+				"alpha": 0.29,
 				"backgroundColor": "rgba( 29, 29, 38, 1 )",
 				"height": 1,
 				"width": null
@@ -401,9 +380,9 @@
 				"flexProps": {
 					"flexDirection": "COLUMN"
 				},
-				"height": 120,
-				"paddingLeft": 10,
-				"paddingRight": 10,
+				"height": 100,
+				"paddingBottom": 5,
+				"paddingTop": 5,
 				"width": null
 			}
 		},
@@ -424,7 +403,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 40,
+				"height": 30,
 				"width": null
 			}
 		},
@@ -504,7 +483,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 40,
+				"height": 25,
 				"width": null
 			}
 		},
@@ -581,7 +560,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 25,
+				"height": 30,
 				"width": null
 			}
 		},
@@ -651,9 +630,9 @@
 				"flexProps": {
 					"flexDirection": "COLUMN"
 				},
-				"height": 120,
-				"paddingLeft": 10,
-				"paddingRight": 10,
+				"height": 100,
+				"paddingBottom": 5,
+				"paddingTop": 5,
 				"width": null
 			}
 		},
@@ -674,7 +653,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 40,
+				"height": 30,
 				"width": null
 			}
 		},
@@ -754,7 +733,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 40,
+				"height": 25,
 				"width": null
 			}
 		},
@@ -831,7 +810,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 25,
+				"height": 30,
 				"width": null
 			}
 		},
@@ -868,18 +847,30 @@
 			}
 		},
 		{
-			"className": ".flexLayout",
-			"id": "32ae-bd14-9278-983e",
+			"className": ".label",
+			"id": "24f1-f9f1-5237-8b99",
 			"props": {
 				"children": [],
-				"name": "divider_2",
-				"parent": "b031-4858-1212-4d4a"
+				"name": "title",
+				"parent": "a550-c24f-abf8-80c7",
+				"text": "Claim",
+				"usePageVariable": true
 			},
-			"type": "FlexLayout",
+			"type": "Label",
 			"userProps": {
-				"alpha": 0.3,
-				"backgroundColor": "rgba( 29, 29, 38, 1 )",
-				"height": 1,
+				"alpha": 0.8,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"font": {
+					"size": 26,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"text": "Claim",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
 				"width": null
 			}
 		}

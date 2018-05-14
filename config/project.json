@@ -1,9 +1,9 @@
 {
     "info": {
-        "name": "Smartface Empty Workspace",
+        "name": "Insurance",
         "company": "Smartface User",
         "webSite": "https://www.smartface.io",
-        "version": "1.0.2",
+        "version": "1.2.0",
         "runtimeVersion": "1100",
         "description": "This is Smartface's default empty project. You can click to Run on Device button to see it on your device."
     },
@@ -61,6 +61,11 @@
                         "url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/iOS/2.0.0/codereaderios.zip",
                         "path": "plugins/iOS/codereaderios.zip",
                         "active": false
+                    },
+                    "instabugios": {
+                        "url": "",
+                        "path": "plugins/iOS/instabugios.zip",
+                        "active": true
                     }
                 },
                 "playerPath": null
@@ -94,11 +99,11 @@
         "output": {
             "ios": {
                 "outputFolder": "output/iOS",
-                "bundleIdentifier": "io.smartface.demo"
+                "bundleIdentifier": "io.smartface.hello"
             },
             "android": {
                 "outputFolder": "output/Android",
-                "packageName": "io.smartface.demo"
+                "packageName": "io.smartface.hello"
             }
         },
         "tempFolder": "output/.tmp"

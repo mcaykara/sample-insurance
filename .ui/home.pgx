@@ -10,12 +10,17 @@
 					"b4d7-5f8e-8153-770d"
 				],
 				"name": "home",
-				"orientation": "PORTRAIT",
-				"parent": null
+				"orientation": "AUTO",
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
-			"userProps": {},
-			"version": "6.7.0"
+			"userProps": {
+				"backgroundColor": "rgba( 248, 248, 248, 1 )",
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
+			},
+			"version": "6.7.1"
 		},
 		{
 			"className": ".statusBar",
@@ -28,7 +33,13 @@
 			},
 			"type": "StatusBar",
 			"userProps": {
-				"visible": false
+				"android": {
+					"color": "rgba( 255, 255, 255, 0 )"
+				},
+				"ios": {
+					"style": "DEFAULT"
+				},
+				"visible": true
 			}
 		},
 		{
@@ -43,7 +54,8 @@
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "newPage001"
+				"title": "newPage001",
+				"visible": false
 			}
 		}
 	]

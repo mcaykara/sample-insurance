@@ -6,7 +6,7 @@ exports.checkAppUpdate = ()=>{
     Application.checkUpdate(function(err, result) {
         if (err) {
             //Checking for update is failed
-            alert("check update error: " + err);
+            //alert("check update error: " + err);
         }
         else {
             //Update is successful. We can show the meta info to inform our app user.
@@ -80,4 +80,8 @@ exports.checkAppUpdate = ()=>{
         }
     });
     
+}
+
+exports.callPhone = (phone)=>{
+    Application.call(`tel:+${phone}`,{});
 }

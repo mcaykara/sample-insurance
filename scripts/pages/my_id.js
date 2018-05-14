@@ -2,6 +2,7 @@
 		You can modify its contents.
 */
 const extend = require('js-base/core/extend');
+const Share = require('sf-core/share');
 const My_idDesign = require('ui/ui_my_id');
 
 const My_id = extend(My_idDesign)(
@@ -13,6 +14,9 @@ const My_id = extend(My_idDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+  
+    this.share1.onTouchEnded = () => Share.shareText("Hello from Smartface", this, []);
+    this.share2.onTouchEnded = () => Share.shareText("Hello from Smartface", this, []);
   });
 
 /**

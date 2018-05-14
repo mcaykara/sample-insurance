@@ -55,6 +55,10 @@
 	<true/>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Need microphone access for uploading videos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Need Library access for uploading images</string>
 	<key>UILaunchImages</key>
 	<array>
 		<dict>

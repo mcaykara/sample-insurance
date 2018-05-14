@@ -3,9 +3,9 @@
 */
 const extend = require('js-base/core/extend');
 const Router = require("sf-core/ui/router");
-const Provider_searchDesign = require('ui/ui_provider_search');
+const LibraryDesign = require('ui/ui_library');
 
-const Provider_search = extend(Provider_searchDesign)(
+const Library = extend(LibraryDesign)(
   // Constructor
   function(_super) {
     // Initalizes super class for this page scope
@@ -15,6 +15,7 @@ const Provider_search = extend(Provider_searchDesign)(
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
+    this.backButton.onTouchEnded = ()=> Router.goBack();
   });
 
 /**
@@ -34,18 +35,6 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
-  renderUI(this);
 }
 
-const renderUI = (page)=>{
-   page.title.text = lang['providerSearchPage']['title'];
-   page.providerName.text = lang['providerSearchPage']['providerName'];
-   page.providerKeywords.text = lang['providerSearchPage']['providerKeywords'];
-   page.providerType.text = lang['providerSearchPage']['providerType'];
-   page.distance.text = lang['providerSearchPage']['distance'];
-   page.planTitle.text = lang['providerSearchPage']['planTitle'];
-   
-   page.searchButton.onTouchEnded = () => Router.go('tabs/provider_search/providers');
-}
-
-module && (module.exports = Provider_search);
+module && (module.exports = Library);
