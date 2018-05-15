@@ -76,8 +76,8 @@ SMF.i18n.defineLanguage('en', {
 		"dependents": "Dependents",
 		"effectiveDate1": "Effective Date",
 		"effectiveDate2": "Effective Date",
-		"expirationDate1": "Vade Sonu",
-		"expirationDate2": "Vade Sonu",
+		"expirationDate1": "Expiration Date",
+		"expirationDate2": "Expiration Date",
 		"vinYearMake": `VIN	
 		Year | Make`,
 	},

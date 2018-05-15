@@ -236,7 +236,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 100,
+				"height": 90,
 				"paddingBottom": 5,
 				"paddingLeft": 0,
 				"paddingRight": 0,
@@ -446,6 +446,7 @@
 					"style": "Book"
 				},
 				"height": 50,
+				"html": "Effective Date",
 				"text": "Effective Date",
 				"textColor": "rgba( 48, 48, 48, 1 )",
 				"usePageVariable": true,
@@ -663,7 +664,7 @@
 					"7017-02db-1eb1-3390",
 					"de40-a2f8-2ea8-00ef",
 					"a809-4c5c-99a0-de33",
-					"a1b3-c184-5c1a-9c7e",
+					"8d19-a83f-ad64-635b",
 					"5601-c512-61ac-ce86",
 					"4500-8443-7e06-6b44",
 					"7291-8d88-aa87-989c",
@@ -798,7 +799,7 @@
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
-				"height": 100,
+				"height": 90,
 				"paddingBottom": 5,
 				"paddingLeft": 0,
 				"paddingRight": 0,
@@ -836,89 +837,6 @@
 				"alpha": 0.5,
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"height": 1,
-				"width": null
-			}
-		},
-		{
-			"className": ".flexLayout",
-			"id": "a1b3-c184-5c1a-9c7e",
-			"props": {
-				"children": [
-					"2c18-f8d2-6c26-21ba",
-					"615e-32c8-1719-7792"
-				],
-				"name": "rowLayout_2",
-				"parent": "33af-984f-9470-9143"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"flexProps": {
-					"flexDirection": "ROW"
-				},
-				"height": 50,
-				"width": null
-			}
-		},
-		{
-			"className": ".label",
-			"hiddenComponent": false,
-			"id": "2c18-f8d2-6c26-21ba",
-			"props": {
-				"children": [],
-				"name": "vinYearMake",
-				"parent": "a1b3-c184-5c1a-9c7e",
-				"text": "VIN\t\nYear | Make",
-				"usePageVariable": true
-			},
-			"type": "TextView",
-			"userProps": {
-				"alpha": 0.8,
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"font": {
-					"size": 16,
-					"bold": false,
-					"italic": false,
-					"family": "Avenir",
-					"style": "Book"
-				},
-				"height": 50,
-				"multiline": true,
-				"text": "VIN\t\nYear | Make",
-				"textColor": "rgba( 48, 48, 48, 1 )",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".label",
-			"hiddenComponent": false,
-			"id": "615e-32c8-1719-7792",
-			"props": {
-				"children": [],
-				"name": "label1_1",
-				"parent": "a1b3-c184-5c1a-9c7e",
-				"text": "123457890123457890\n2017 | Smart"
-			},
-			"type": "TextView",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"font": {
-					"size": 13,
-					"bold": false,
-					"italic": false,
-					"family": "Avenir",
-					"style": "Book"
-				},
-				"height": 50,
-				"multiline": true,
-				"text": "123457890123457890\n2017 | Smart",
-				"textAlignment": "MIDRIGHT",
-				"textColor": "rgba( 48, 48, 48, 1 )",
 				"width": null
 			}
 		},
@@ -1261,7 +1179,11 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"height": 30
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"marginBottom": 5
 			}
 		},
 		{
@@ -1275,6 +1197,9 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -1282,7 +1207,7 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
 				"html": "<span style=\"font-family: Avenir-Medium;\">John Smart</span>",
 				"left": 0,
 				"text": "John Smart",
@@ -1304,9 +1229,10 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
-					"flexDirection": "ROW"
+					"flexDirection": "ROW",
+					"flexGrow": 1
 				},
-				"height": 30
+				"height": null
 			}
 		},
 		{
@@ -1332,7 +1258,8 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
+				"html": "Policy ID",
 				"left": 0,
 				"text": "Policy ID",
 				"top": 0,
@@ -1362,7 +1289,7 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
 				"left": 0,
 				"text": "545297503434",
 				"textAlignment": "MIDRIGHT",
@@ -1384,13 +1311,15 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
-					"flexDirection": "ROW"
+					"flexDirection": "ROW",
+					"flexGrow": 1
 				},
-				"height": 30
+				"height": null
 			}
 		},
 		{
 			"className": ".label",
+			"hiddenComponent": false,
 			"id": "83b8-69ee-99d0-c9cd",
 			"props": {
 				"children": [],
@@ -1411,7 +1340,7 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
 				"left": 0,
 				"text": "35293",
 				"textAlignment": "MIDRIGHT",
@@ -1441,7 +1370,7 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
 				"left": 0,
 				"text": "Plan ID",
 				"top": 0,
@@ -1486,7 +1415,10 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"height": 30
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null
 			}
 		},
 		{
@@ -1500,6 +1432,9 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -1507,7 +1442,7 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
 				"html": "<span style=\"font-family: Avenir-Medium;\">John Smart</span>",
 				"left": 0,
 				"text": "John Smart",
@@ -1529,9 +1464,10 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
-					"flexDirection": "ROW"
+					"flexDirection": "ROW",
+					"flexGrow": 1
 				},
-				"height": 30
+				"height": null
 			}
 		},
 		{
@@ -1557,7 +1493,7 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
 				"left": 0,
 				"text": "Policy ID",
 				"top": 0,
@@ -1587,7 +1523,7 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
 				"left": 0,
 				"text": "545297503434",
 				"textAlignment": "MIDRIGHT",
@@ -1609,9 +1545,10 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
-					"flexDirection": "ROW"
+					"flexDirection": "ROW",
+					"flexGrow": 1
 				},
-				"height": 30
+				"height": null
 			}
 		},
 		{
@@ -1636,7 +1573,7 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
 				"left": 0,
 				"text": "Plan ID",
 				"top": 0,
@@ -1665,7 +1602,7 @@
 					"family": "Avenir",
 					"style": "Book"
 				},
-				"height": 20,
+				"height": null,
 				"left": 0,
 				"text": "35293",
 				"textAlignment": "MIDRIGHT",
@@ -1702,6 +1639,91 @@
 				"alpha": 0.5,
 				"backgroundColor": "rgba( 151, 151, 151, 1 )",
 				"height": 1,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "8d19-a83f-ad64-635b",
+			"props": {
+				"children": [
+					"5e13-bfe1-3e10-f04a",
+					"485e-209c-00f0-f4bc"
+				],
+				"name": "rowLayout_2",
+				"parent": "33af-984f-9470-9143"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "5e13-bfe1-3e10-f04a",
+			"props": {
+				"children": [],
+				"name": "dependents",
+				"parent": "8d19-a83f-ad64-635b",
+				"text": "Dependents",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 0.8,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": true,
+				"text": "Dependents",
+				"textColor": "rgba( 48, 48, 48, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".label",
+			"hiddenComponent": false,
+			"id": "485e-209c-00f0-f4bc",
+			"props": {
+				"children": [],
+				"name": "label1_1",
+				"parent": "8d19-a83f-ad64-635b",
+				"text": "Jane Smart\nMicheal Smart"
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 13,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Book"
+				},
+				"height": 50,
+				"multiline": true,
+				"text": "Jane Smart\nMicheal Smart",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 48, 48, 48, 1 )",
 				"width": null
 			}
 		}

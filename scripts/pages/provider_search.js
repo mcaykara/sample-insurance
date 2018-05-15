@@ -3,6 +3,9 @@
 */
 const extend = require('js-base/core/extend');
 const Router = require("sf-core/ui/router");
+const Picker = require("sf-core/ui/picker");
+const KeyboardType = require('sf-core/ui/keyboardtype');
+
 const Provider_searchDesign = require('ui/ui_provider_search');
 
 const Provider_search = extend(Provider_searchDesign)(
@@ -37,15 +40,38 @@ function onLoad(superOnLoad) {
   renderUI(this);
 }
 
-const renderUI = (page)=>{
-   page.title.text = lang['providerSearchPage']['title'];
-   page.providerName.text = lang['providerSearchPage']['providerName'];
-   page.providerKeywords.text = lang['providerSearchPage']['providerKeywords'];
-   page.providerType.text = lang['providerSearchPage']['providerType'];
-   page.distance.text = lang['providerSearchPage']['distance'];
-   page.planTitle.text = lang['providerSearchPage']['planTitle'];
-   
-   page.searchButton.onTouchEnded = () => Router.go('tabs/provider_search/providers');
+const renderUI = (page) => {
+  page.title.text = lang['providerSearchPage']['title'];
+  page.providerName.text = lang['providerSearchPage']['providerName'];
+  page.providerKeywords.text = lang['providerSearchPage']['providerKeywords'];
+  page.providerType.text = lang['providerSearchPage']['providerType'];
+  page.distance.text = lang['providerSearchPage']['distance'];
+  page.planTitle.text = lang['providerSearchPage']['planTitle'];
+  page.distanceInput.keyboardType = KeyboardType.NUMBER;
+
+  page.searchButton.onTouchEnded = () => Router.go('tabs/provider_search/providers');
+
+  const items = [
+    "item 1",
+    "item 2",
+    "item 3",
+    "item 4",
+    "item 5"
+  ];
+
+  const selectedItems = [];
+
+  const myPicker = new Picker({
+    items: items,
+    currentIndex: 2
+  });
+
+  page.providerTypeInput.onEditBegins = () => {
+    myPicker.show((params) => {
+      selectedItems.push(items[params.index]);
+      page.providerTypeInput.text = selectedItems.join(',');
+    });
+  }
 }
 
 module && (module.exports = Provider_search);

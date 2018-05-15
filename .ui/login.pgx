@@ -171,10 +171,13 @@
 				"hint": "Username",
 				"name": "usernameTextInput",
 				"parent": "c71a-a66e-96f7-9a36",
+				"text": "Username",
 				"usePageVariable": true
 			},
 			"type": "TextBox",
-			"userProps": {}
+			"userProps": {
+				"text": "Username"
+			}
 		},
 		{
 			"className": "#LoginPage.divider",
@@ -236,11 +239,13 @@
 				"isPassword": true,
 				"name": "passwordTextInput",
 				"parent": "154a-e451-9053-87b7",
+				"text": "Password",
 				"usePageVariable": true
 			},
 			"type": "TextBox",
 			"userProps": {
-				"isPassword": true
+				"isPassword": true,
+				"text": "Password"
 			}
 		},
 		{

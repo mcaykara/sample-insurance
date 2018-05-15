@@ -3,7 +3,7 @@
         "name": "Insurance",
         "company": "Smartface User",
         "webSite": "https://www.smartface.io",
-        "version": "1.2.0",
+        "version": "1.2.1",
         "runtimeVersion": "1100",
         "description": "This is Smartface's default empty project. You can click to Run on Device button to see it on your device."
     },
@@ -68,7 +68,7 @@
                         "active": true
                     }
                 },
-                "playerPath": null
+                "playerPath": "players/ios/player-6.6.8-beta.409.zip"
             },
             "android": {
                 "scripts": "scripts",
@@ -89,7 +89,7 @@
                         "active": false
                     }
                 },
-                "playerPath": null
+                "playerPath": "players/android/player-6.6.5-beta.1.zip"
             },
             "keys": {
                 "project3DesKey": "atm9RnU5nYn3xcdipRnVKrRLiwP4B7b0",
@@ -99,11 +99,11 @@
         "output": {
             "ios": {
                 "outputFolder": "output/iOS",
-                "bundleIdentifier": "io.smartface.hello"
+                "bundleIdentifier": "io.smartface.insurance"
             },
             "android": {
                 "outputFolder": "output/Android",
-                "packageName": "io.smartface.hello"
+                "packageName": "io.smartface.insurance"
             }
         },
         "tempFolder": "output/.tmp"

@@ -12,13 +12,13 @@
 				"name": "home",
 				"orientation": "AUTO",
 				"parent": null,
-				"safeAreaEnabled": true
+				"safeAreaEnabled": false
 			},
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 248, 248, 248, 1 )",
 				"orientation": "AUTO",
-				"safeAreaEnabled": true
+				"safeAreaEnabled": false
 			},
 			"version": "6.7.1"
 		},

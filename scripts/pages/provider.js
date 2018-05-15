@@ -19,7 +19,7 @@ const Provider = extend(ProviderDesign)(
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     
-    this.button1.onPress = () => Common.callPhone(901234567890);
+    this.button1.onPress = () => Common.callPhone("+19000000");
     this.backButton.onTouchEnded = ()=> Router.goBack();
   });
 

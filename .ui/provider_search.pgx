@@ -372,9 +372,10 @@
 			"id": "36b8-0cf8-d0a2-a0c9",
 			"props": {
 				"children": [],
-				"name": "input",
+				"name": "providerTypeInput",
 				"parent": "0c7c-f514-45f7-ac75",
-				"text": "All Types"
+				"text": "All Types",
+				"usePageVariable": true
 			},
 			"type": "TextBox",
 			"userProps": {
@@ -383,6 +384,7 @@
 				},
 				"height": 30,
 				"text": "All Types",
+				"usePageVariable": true,
 				"width": null
 			}
 		},
@@ -459,9 +461,10 @@
 			"id": "71eb-469c-23a7-8d65",
 			"props": {
 				"children": [],
-				"name": "input",
+				"name": "distanceInput",
 				"parent": "9f29-fab9-adfe-4451",
-				"text": "20"
+				"text": "20",
+				"usePageVariable": true
 			},
 			"type": "TextBox",
 			"userProps": {
@@ -470,6 +473,7 @@
 				},
 				"height": 30,
 				"text": "20",
+				"usePageVariable": true,
 				"width": null
 			}
 		},
@@ -578,15 +582,15 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"backgroundColor": "rgba( 107, 97, 249, 1 )",
+				"backgroundColor": "rgba( 136, 62, 240, 1 )",
 				"font": {
-					"size": 20,
+					"size": 18,
 					"bold": false,
 					"italic": false,
 					"family": "Avenir",
 					"style": "Medium"
 				},
-				"height": 50,
+				"height": 40,
 				"marginLeft": 20,
 				"marginRight": 20,
 				"text": "Find",

@@ -53,15 +53,12 @@ function onLoad(superOnLoad) {
   var page = this;
   page.children = page.children || {};
   var containerFlex = new ScrollView({
-    flexGrow: 1,
-    backgroundColor: Color.WHITE,
+    flexGrow: 1
   });
 
   renderHeader(page, containerFlex);
   renderBody(page, containerFlex);
-
   page.layout.addChild(containerFlex);
-
 }
 
 var renderHeader = (page, containerFlex) => {
@@ -91,7 +88,6 @@ var renderHeader = (page, containerFlex) => {
     positionType: FlexLayout.PositionType.ABSOLUTE,
     visible: false,
     zIndex: 1,
-
   });
 
   chartFlex.addChild(wvChart);

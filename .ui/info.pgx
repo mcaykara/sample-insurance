@@ -110,7 +110,8 @@
 					"d288-09a8-8b34-289e",
 					"3cec-8d8f-d11e-f400",
 					"793a-5fd4-b75d-0da2",
-					"0249-7bfd-7156-5282"
+					"0249-7bfd-7156-5282",
+					"800d-ca86-ef74-86f8"
 				],
 				"name": "container",
 				"parent": "adc8-6be9-6867-6270"
@@ -519,6 +520,37 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {}
+		},
+		{
+			"className": ".button",
+			"id": "800d-ca86-ef74-86f8",
+			"props": {
+				"children": [],
+				"name": "logoutButton",
+				"parent": "622b-b4b3-de70-7e5e",
+				"text": "Logout",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"backgroundColor": "rgba( 196, 104, 104, 1 )",
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Medium"
+				},
+				"height": 40,
+				"left": 0,
+				"marginLeft": 20,
+				"marginRight": 20,
+				"marginTop": 20,
+				"text": "Logout",
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
 		}
 	]
 }

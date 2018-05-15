@@ -48,7 +48,6 @@ const renderUI = (page)=>{
   page.effectiveDate2.text = lang['myIDPage']['effectiveDate2'];
   page.expirationDate1.text = lang['myIDPage']['expirationDate1'];
   page.expirationDate2.text = lang['myIDPage']['expirationDate2'];
-  page.vinYearMake.text = lang['myIDPage']['vinYearMake'];
 }
 
 module && (module.exports = My_id);
