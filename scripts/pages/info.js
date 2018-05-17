@@ -8,6 +8,7 @@ const Common = require("../lib/common");
 const System = require('sf-core/device/system');
 const AlertView = require('sf-core/ui/alertview');
 const Application = require("sf-core/application");
+const WebBrowser = require('sf-core/ui/webbrowser');
 
 const Info = extend(InfoDesign)(
   // Constructor
@@ -75,8 +76,14 @@ const renderUI = (page) => {
   page.rememberMeTitle.text = lang['infoPage']['rememberMeTitle'];
   page.fingerprintTitle.text = lang['infoPage']['fingerprintTitle'];
   page.notificationsTitle.text = lang['infoPage']['notificationsTitle'];
+  page.version.text = 'Version ' + Application.version;
 
-  page.row.onTouchEnded = () => Application.call("https://developer.smartface.io/v1.1/docs/webbrowser");
+  page.row.onTouchEnded = () => {
+    const webOptions = new WebBrowser.Options();
+    webOptions.url = "https://developer.smartface.io/v1.1/docs/webbrowser"
+    WebBrowser.show(page, webOptions);
+  }
+
   page.icon2.onTouchEnded = () => Common.callPhone("+1-917-696-8662");
   page.icon3.onTouchEnded = () => Application.call("mailto:sales@smartface.io");
   page.logoutButton.onPress = () => logout();
@@ -95,14 +102,13 @@ const logout = () => {
       Router.go('login')
     }
   });
-  
+
   myAlertView.addButton({
     type: AlertView.Android.ButtonType.POSITIVE,
     text: "No",
-    onClick: function() {
-    }
+    onClick: function() {}
   });
-  
+
   myAlertView.show();
 }
 module && (module.exports = Info);

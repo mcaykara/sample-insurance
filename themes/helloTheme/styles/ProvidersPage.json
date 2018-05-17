@@ -1,0 +1,118 @@
+{
+  "#ProvidersPage": {
+    ".title": {
+        "visible": true,
+        "multiline": false,
+        "alpha": 1,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "borderColor": "#FFFFFF",
+        "borderWidth": 0,
+        "textColor": "#000000",
+        "textAlignment": "MIDCENTER",
+        "font": {
+          "size": 26,
+          "bold": false,
+          "italic": false,
+          "family": "Avenir",
+          "weight": "Book"
+        },
+        "flexProps": {
+          "alignSelf": "AUTO",
+          "positionType": "RELATIVE",
+          "flexGrow": 1
+        },
+        "marginTop": 10
+    },
+    ".listItemContainer": {
+      "backgroundColor": "rgba(0,0,0,0)",
+      "height": 70,
+      "marginLeft":20,
+      "marginRight":20,
+      "paddingBottom": 10,
+      "paddingTop":15,
+      "width": null,
+      "flexProps": {
+        "flexDirection": "ROW"
+      }
+    },
+    ".listItemLeft": {
+        "height": null,
+        "flexProps": {
+          "flexGrow": 1
+        }
+    },
+    ".listItemRight": {
+        "height": null,
+        "flexProps": {
+          "flexGrow": 0.5
+        }
+    },
+    ".listItemRightLabel": {
+        "backgroundColor": "#D4B9F9",
+        "borderRadius": 30,
+        "width": null,
+        "height": null,
+        "textColor": "#303030",
+        "font": {
+          "size": 16,
+          "bold": false,
+          "italic": false,
+          "family": "Avenir",
+          "weight": "Medium"
+        },
+        "textAlignment": "MIDCENTER",
+        "flexProps": {
+          "flexGrow": 1
+        }
+    },
+    ".listItemLeftLabel1": {
+        "font": {
+          "size": 16,
+          "family": "Avenir",
+          "weight": "Roman"
+        },
+        "flexProps": {
+          "flexGrow": 1
+        }
+    },
+    ".listItemLeftLabel2": {
+        "font": {
+          "size": 15,
+          "family": "Avenir",
+          "weight": "Book"
+        },
+        "flexProps": {
+          "flexGrow": 1
+        }
+    },
+    ".listItemIcon": {
+        "visible": true,
+        "width": 35,
+        "height": null
+    },
+    ".divider": {
+        "height": 1,
+        "marginLeft": 20,
+        "marginRight":20,
+        "backgroundColor": "#979797",
+        "alpha": 0.5,
+        "width": null,
+        "flexProps": {
+          "alignSelf": "AUTO",
+          "positionType": "RELATIVE"
+        }
+    },
+    ".switch": {
+      "thumbOffColor": "#883EF0",
+      "thumbOnColor": "#883EF0",
+      "alpha": 1,
+      "minHeight": 31,
+      "minWidth": 51,
+      "visible": true,
+      "flexProps": {
+        "alignSelf": "CENTER",
+        "positionType": "RELATIVE"
+      }
+    }
+  }
+}

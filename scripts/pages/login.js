@@ -20,7 +20,6 @@ const Login = extend(LoginDesign)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        this.loginButton.onPress = () => login(this);
     });
 
 /**
@@ -81,42 +80,38 @@ const renderUI = (page) => {
     page.title.text = lang['loginPage']['title'];
     page.loginButton.text = lang['loginPage']['loginButtonText'];
     page.forgotPasswordTitle.text = lang['loginPage']['forgotPasswordTitle'];
-}
 
-const login = (page) => {
     const loadingLayout = new FlexLayout({
         id: 999,
-        backgroundColor: Color.BLACK,
         alpha: 0.5,
         visible: false,
         touchEnabled: true,
         positionType: FlexLayout.PositionType.ABSOLUTE,
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
+        top: System.OS === "Android" ? 10: 23,
+        right: 10
     });
     const myActivityIndicator = new ActivityIndicator({
         color: Color.WHITE,
         backgroundColor: Color.TRANSPARENT,
         touchEnabled: true,
         ios: {
-            type: ActivityIndicator.iOS.Type.WHITELARGE
+            type: ActivityIndicator.iOS.Type.WHITE
         }
     });
-    if (System.OS != "Android") {
-        myActivityIndicator.flexGrow = 1;
-    }
+    
     loadingLayout.addChild(myActivityIndicator);
     loadingLayout.justifyContent = FlexLayout.JustifyContent.CENTER;
 
-    page.layout.addChild(loadingLayout);
+    page.loginButtonLayout.addChild(loadingLayout);
 
-    loadingLayout.visible = true;
+    page.loginButton.onPress = () => {
+        loadingLayout.visible = true;
 
-    setTimeout(() => {
-        loadingLayout.visible = false;
-        Router.go("tabs");
-    }, 1500);
+        setTimeout(() => {
+            loadingLayout.visible = false;
+            Router.go("tabs");
+        }, 1500);
+    }
 }
+
 module && (module.exports = Login);

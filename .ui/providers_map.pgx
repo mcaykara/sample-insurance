@@ -1,0 +1,123 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "272f-f0af-3e89-eb5b",
+			"initialized": true,
+			"props": {
+				"children": [
+					"dcb4-61d2-6091-4011",
+					"c9d1-16a0-8ad4-fa1c",
+					"a1d8-c7d5-2dba-1929"
+				],
+				"name": "providers_map",
+				"orientation": "AUTO",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "AUTO"
+			},
+			"version": "6.7.1"
+		},
+		{
+			"className": ".statusBar",
+			"id": "dcb4-61d2-6091-4011",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "272f-f0af-3e89-eb5b"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"android": {
+					"color": "rgba( 255, 255, 255, 1 )"
+				}
+			}
+		},
+		{
+			"className": ".headerBar",
+			"id": "c9d1-16a0-8ad4-fa1c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "272f-f0af-3e89-eb5b",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001",
+				"visible": false
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "a1d8-c7d5-2dba-1929",
+			"props": {
+				"children": [
+					"8643-72e0-9d59-d525",
+					"4457-cbd9-519e-96dc"
+				],
+				"name": "container",
+				"parent": "272f-f0af-3e89-eb5b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null
+			}
+		},
+		{
+			"className": ".mapView",
+			"id": "8643-72e0-9d59-d525",
+			"props": {
+				"children": [],
+				"name": "mapView1",
+				"parent": "a1d8-c7d5-2dba-1929",
+				"usePageVariable": true
+			},
+			"type": "MapView",
+			"userProps": {
+				"bottom": 0,
+				"flexProps": {
+					"flexGrow": 1,
+					"positionType": "RELATIVE"
+				},
+				"height": null,
+				"type": "NORMAL",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"hiddenComponent": false,
+			"id": "4457-cbd9-519e-96dc",
+			"props": {
+				"children": [],
+				"name": "listButton",
+				"parent": "a1d8-c7d5-2dba-1929",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO"
+				},
+				"height": 40,
+				"image": "menu.png",
+				"imageFillType": "NORMAL",
+				"right": 20,
+				"top": 30,
+				"usePageVariable": true,
+				"width": 40
+			}
+		}
+	]
+}

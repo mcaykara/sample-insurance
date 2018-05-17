@@ -1,0 +1,26 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"id": "e0e3-eab2-4de2-3b46",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.29,
+				"backgroundColor": "rgba( 29, 29, 38, 1 )",
+				"bottom": 0,
+				"height": 1,
+				"left": 0,
+				"right": 0,
+				"width": null
+			}
+		}
+	]
+}

@@ -1,0 +1,363 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "f2fe-a49e-9586-5386",
+			"initialized": true,
+			"props": {
+				"children": [
+					"aa77-b809-405e-e150",
+					"5a41-24d8-a4de-a9d6",
+					"6e26-5079-b5a6-11ba",
+					"b4da-b365-87fe-dd62"
+				],
+				"name": "library",
+				"orientation": "AUTO",
+				"parent": null,
+				"safeAreaEnabled": true
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
+			},
+			"version": "6.7.1"
+		},
+		{
+			"className": ".statusBar",
+			"id": "aa77-b809-405e-e150",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "f2fe-a49e-9586-5386"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"android": {
+					"color": "rgba( 255, 255, 255, 1 )"
+				}
+			}
+		},
+		{
+			"className": ".headerBar",
+			"id": "5a41-24d8-a4de-a9d6",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "f2fe-a49e-9586-5386",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001",
+				"visible": false
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "6e26-5079-b5a6-11ba",
+			"props": {
+				"children": [
+					"1afd-5f15-ff0f-4f6b",
+					"0294-9f1c-69d5-7167"
+				],
+				"name": "header",
+				"parent": "f2fe-a49e-9586-5386"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN",
+					"alignContent": "STRETCH"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "1afd-5f15-ff0f-4f6b",
+			"props": {
+				"children": [],
+				"name": "backButton",
+				"parent": "6e26-5079-b5a6-11ba",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "back.png",
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": 40
+			}
+		},
+		{
+			"className": "#ProvidersPage.title",
+			"id": "0294-9f1c-69d5-7167",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "6e26-5079-b5a6-11ba",
+				"text": "Library",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"height": 50,
+				"marginTop": 0,
+				"text": "Library",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".scrollView",
+			"id": "b4da-b365-87fe-dd62",
+			"props": {
+				"children": [
+					"c8ff-4c0f-fc06-0ac2",
+					"84f6-1835-ec4b-5559",
+					"5a29-8f77-04af-ad3e",
+					"a99d-e0e5-40d7-3738",
+					"83db-0017-d7de-3068"
+				],
+				"name": "container",
+				"parent": "f2fe-a49e-9586-5386"
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "c8ff-4c0f-fc06-0ac2",
+			"props": {
+				"children": [
+					"0467-113b-09bb-b39a",
+					"2806-a1f1-63c7-d1ca"
+				],
+				"name": "row",
+				"parent": "b4da-b365-87fe-dd62"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 60,
+				"marginLeft": 0,
+				"marginRight": 0,
+				"paddingLeft": 20,
+				"paddingRight": 20,
+				"width": null
+			}
+		},
+		{
+			"className": " #InfoPage.listItemTitle",
+			"id": "0467-113b-09bb-b39a",
+			"props": {
+				"children": [],
+				"name": "informationLibraryTitle",
+				"parent": "c8ff-4c0f-fc06-0ac2",
+				"text": "View Plans",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"weight": "Multiple",
+					"style": "Medium"
+				},
+				"html": "View Plans",
+				"text": "View Plans"
+			}
+		},
+		{
+			"className": "#InfoPage.listItemIcon",
+			"id": "2806-a1f1-63c7-d1ca",
+			"props": {
+				"children": [],
+				"name": "icon1",
+				"parent": "c8ff-4c0f-fc06-0ac2",
+				"usePageVariable": false
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": null,
+				"image": "arrow_right.png",
+				"usePageVariable": false,
+				"width": 35
+			}
+		},
+		{
+			"className": "#InfoPage.divider",
+			"id": "84f6-1835-ec4b-5559",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "b4da-b365-87fe-dd62"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "5a29-8f77-04af-ad3e",
+			"props": {
+				"children": [
+					"a8c6-2f5a-fa66-2452",
+					"1cf9-4803-30e0-e2d2"
+				],
+				"name": "row_1",
+				"parent": "b4da-b365-87fe-dd62"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 60,
+				"marginLeft": 0,
+				"marginRight": 0,
+				"paddingLeft": 20,
+				"paddingRight": 20,
+				"width": null
+			}
+		},
+		{
+			"className": "#InfoPage.listItemTitle",
+			"id": "a8c6-2f5a-fa66-2452",
+			"props": {
+				"children": [],
+				"name": "callUsTitle",
+				"parent": "5a29-8f77-04af-ad3e",
+				"text": "FAQ",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"weight": "Multiple",
+					"style": "Medium"
+				},
+				"html": "FAQ",
+				"text": "FAQ"
+			}
+		},
+		{
+			"className": "#InfoPage.listItemIcon",
+			"id": "1cf9-4803-30e0-e2d2",
+			"props": {
+				"children": [],
+				"name": "icon2",
+				"parent": "5a29-8f77-04af-ad3e",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": null,
+				"image": "arrow_right.png",
+				"usePageVariable": true,
+				"width": 35
+			}
+		},
+		{
+			"className": "#InfoPage.divider",
+			"id": "a99d-e0e5-40d7-3738",
+			"props": {
+				"children": [],
+				"name": "divider_1",
+				"parent": "b4da-b365-87fe-dd62"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "83db-0017-d7de-3068",
+			"props": {
+				"children": [
+					"00cc-c158-17d0-4a0f",
+					"ba94-41d2-70cf-311b"
+				],
+				"name": "row_2",
+				"parent": "b4da-b365-87fe-dd62"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 60,
+				"marginLeft": 0,
+				"marginRight": 0,
+				"paddingLeft": 20,
+				"paddingRight": 20,
+				"width": null
+			}
+		},
+		{
+			"className": "#InfoPage.listItemTitle",
+			"id": "00cc-c158-17d0-4a0f",
+			"props": {
+				"children": [],
+				"name": "sendMessageTitle",
+				"parent": "83db-0017-d7de-3068",
+				"text": "Medication Library",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"size": 16,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"weight": "Multiple",
+					"style": "Medium"
+				},
+				"html": "",
+				"text": "Medication Library"
+			}
+		},
+		{
+			"className": "#InfoPage.listItemIcon",
+			"id": "ba94-41d2-70cf-311b",
+			"props": {
+				"children": [],
+				"name": "icon3",
+				"parent": "83db-0017-d7de-3068",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": null,
+				"image": "arrow_right.png",
+				"usePageVariable": true,
+				"width": 35
+			}
+		}
+	]
+}

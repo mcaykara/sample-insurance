@@ -104,4 +104,4 @@ global.tabBar.setIndex("home");
 
 Router.add("tabs", global.tabBar);
 Router.add("login", navigator);
-Router.go("tabs");
+Router.go("login");

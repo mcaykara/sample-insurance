@@ -111,6 +111,7 @@
 					"3cec-8d8f-d11e-f400",
 					"793a-5fd4-b75d-0da2",
 					"0249-7bfd-7156-5282",
+					"0fe9-3e53-6a8a-1a1f",
 					"800d-ca86-ef74-86f8"
 				],
 				"name": "container",
@@ -176,7 +177,7 @@
 			"type": "ImageView",
 			"userProps": {
 				"height": null,
-				"image": "info_2.png",
+				"image": "arrow_right.png",
 				"usePageVariable": false,
 				"width": 35
 			}
@@ -533,7 +534,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"backgroundColor": "rgba( 196, 104, 104, 1 )",
+				"backgroundColor": "rgba( 218, 42, 42, 1 )",
 				"font": {
 					"size": 16,
 					"bold": false,
@@ -543,10 +544,42 @@
 				},
 				"height": 40,
 				"left": 0,
+				"marginBottom": 20,
 				"marginLeft": 20,
 				"marginRight": 20,
 				"marginTop": 20,
 				"text": "Logout",
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".textView",
+			"id": "0fe9-3e53-6a8a-1a1f",
+			"props": {
+				"children": [],
+				"name": "version",
+				"parent": "622b-b4b3-de70-7e5e",
+				"text": "Version 1.1.2",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"font": {
+					"style": "Regular",
+					"size": 13
+				},
+				"height": 35,
+				"html": "Version 1.1.2",
+				"left": 0,
+				"marginLeft": 20,
+				"marginRight": 20,
+				"marginTop": 10,
+				"text": "Version 1.1.2",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 74, 74, 74, 1 )",
 				"top": 0,
 				"usePageVariable": true,
 				"width": null

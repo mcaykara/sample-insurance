@@ -7,7 +7,8 @@
 			"props": {
 				"children": [
 					"2a5a-15cd-88f0-73e6",
-					"b4d7-5f8e-8153-770d"
+					"b4d7-5f8e-8153-770d",
+					"40a8-ffb1-d068-82d2"
 				],
 				"name": "home",
 				"orientation": "AUTO",
@@ -17,7 +18,13 @@
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 248, 248, 248, 1 )",
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"flexWrap": "NOWRAP",
+					"alignContent": "STRETCH"
+				},
 				"orientation": "AUTO",
+				"paddingTop": 0,
 				"safeAreaEnabled": false
 			},
 			"version": "6.7.1"
@@ -56,6 +63,98 @@
 			"userProps": {
 				"title": "newPage001",
 				"visible": false
+			}
+		},
+		{
+			"className": ".scrollView",
+			"id": "40a8-ffb1-d068-82d2",
+			"props": {
+				"children": [
+					"2ab8-75bf-2c94-75fb"
+				],
+				"name": "container",
+				"parent": "a30d-1bd6-628b-acfd",
+				"usePageVariable": true
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"align": "VERTICAL",
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "AUTO"
+				},
+				"height": null,
+				"ios": {
+					"scrollBarEnabled": true
+				},
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "2ab8-75bf-2c94-75fb",
+			"props": {
+				"children": [
+					"7eb9-c803-d784-44dc",
+					"24d2-9d99-d91e-425a"
+				],
+				"name": "header",
+				"parent": "40a8-ffb1-d068-82d2",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"height": 287.5,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "7eb9-c803-d784-44dc",
+			"props": {
+				"children": [],
+				"name": "headerImage",
+				"parent": "2ab8-75bf-2c94-75fb",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"flexGrow": 1
+				},
+				"height": null,
+				"image": "header_background.png",
+				"imageFillType": "STRETCH",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "24d2-9d99-d91e-425a",
+			"props": {
+				"children": [],
+				"name": "transparentLayout",
+				"parent": "2ab8-75bf-2c94-75fb",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.86,
+				"backgroundColor": "rgba( 84, 123, 255, 1 )",
+				"bottom": 0,
+				"flexProps": {
+					"flexGrow": 1,
+					"positionType": "ABSOLUTE"
+				},
+				"height": null,
+				"left": 0,
+				"right": 0,
+				"top": 0,
+				"usePageVariable": true
 			}
 		}
 	]

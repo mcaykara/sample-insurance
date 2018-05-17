@@ -51,17 +51,28 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
   superOnLoad();
   var page = this;
-  page.children = page.children || {};
-  var containerFlex = new ScrollView({
-    flexGrow: 1
-  });
 
-  renderHeader(page, containerFlex);
-  renderBody(page, containerFlex);
-  page.layout.addChild(containerFlex);
+renderBody(page);
+  
+
+  // var containerFlex = new ScrollView({
+  //   flexGrow: 1
+  // });
+
+  // renderHeader(page, containerFlex);
+  // renderBody(page, containerFlex);
+  // page.layout.addChild(containerFlex);
 }
 
-var renderHeader = (page, containerFlex) => {
+var renderBody = (page) => {
+  
+  page.transparentLayout.backgroundColor = Color.createGradient({
+    direction: Color.GradientDirection.DIAGONAL_RIGHT,
+    startColor: Color.create("#9F26EC"),
+    endColor: Color.create("#547BFF")
+  });
+  page.children = page.children || {};
+
   const chartFlex = page.children.chartFlex = new FlexLayout({
     width: NaN,
     height: NaN,
@@ -77,7 +88,7 @@ var renderHeader = (page, containerFlex) => {
     justifyContent: FlexLayout.JustifyContent.CENTER
   });
 
-  chartFlex.children = chartFlex.children || {};
+  chartFlex.children = chartFlex.children || {}
 
   const wvChart = chartFlex.children.wvChart = new WebView({
     left: 0,
@@ -92,51 +103,21 @@ var renderHeader = (page, containerFlex) => {
 
   chartFlex.addChild(wvChart);
 
-  var amCharts = new AMCharts({ webView: wvChart });
+  const amCharts = new AMCharts({ webView: wvChart });
 
-  var headerFlex = new FlexLayout({
-    height: 287.5
-  });
-
-  const myImage = Image.createFromFile("images://header_background.png")
-  const myImageView = new ImageView({
-    image: myImage,
-    left: 0,
-    top: 0,
-    right: 0,
-    bottom: 0,
-    positionType: FlexLayout.PositionType.ABSOLUTE,
-    imageFillType: ImageView.FillType.STRETCH,
-    zIndex: -2
-  });
-
-  const transParentView = new FlexLayout({
-    alpha: 0.86,
-    zIndex: -1,
-    left: 0,
-    top: 0,
-    right: 0,
-    bottom: 0,
-    positionType: FlexLayout.PositionType.ABSOLUTE,
-    backgroundColor: Color.createGradient({
-      direction: Color.GradientDirection.DIAGONAL_RIGHT,
-      startColor: Color.create("#9F26EC"),
-      endColor: Color.create("#547BFF")
-    })
-  });
-  headerFlex.addChild(myImageView);
-  headerFlex.addChild(transParentView);
-  headerFlex.addChild(chartFlex);
-  headerFlex.addChild(new Label({
+  page.header.addChild(chartFlex);
+  
+    page.header.addChild(new Label({
     height: 50,
+     positionType: FlexLayout.PositionType.ABSOLUTE,
     text: lang['homePage']['title'],
+    left: 0,
+    top: 15,
+    right: 0,
     font: Font.create("Avenir", 26),
     textAlignment: TextAlignment.MIDCENTER,
     textColor: Color.WHITE
   }));
-
-
-  containerFlex.layout.addChild(headerFlex);
 
   amCharts.ready().then(() => {
     amCharts.loadScritsByName("pie").then((status) => {
@@ -147,22 +128,20 @@ var renderHeader = (page, containerFlex) => {
       console.error(e);
     });
   });
-}
-
-var renderBody = (page, containerFlex) => {
-  containerFlex.layout.addChild(listItemType1(lang['homePage']['coverageUsage'], "73% Medical - Dental"));
-  containerFlex.layout.addChild(listDivider());
-  containerFlex.layout.addChild(listItemType1(lang['homePage']['policyID'], "124293752047467034"));
-  containerFlex.layout.addChild(listDivider());
-  containerFlex.layout.addChild(listItemType1(lang['homePage']['planID'], "1242"));
-  containerFlex.layout.addChild(listDivider());
-  containerFlex.layout.addChild(listItemType1(lang['homePage']['currentPremium'], "$150"));
-  containerFlex.layout.addChild(new FlexLayout({
+  
+  page.container.layout.addChild(listItemType1(lang['homePage']['coverageUsage'], "73% Medical - Dental"));
+  page.container.layout.addChild(listDivider());
+  page.container.layout.addChild(listItemType1(lang['homePage']['policyID'], "124293752047467034"));
+  page.container.layout.addChild(listDivider());
+  page.container.layout.addChild(listItemType1(lang['homePage']['planID'], "1242"));
+  page.container.layout.addChild(listDivider());
+  page.container.layout.addChild(listItemType1(lang['homePage']['currentPremium'], "$150"));
+  page.container.layout.addChild(new FlexLayout({
     height: 35,
     backgroundColor: Color.create('#F8F8F8')
   }));
 
-  containerFlex.layout.addChild(listView1());
+  page.container.layout.addChild(listView1());
 };
 
 var listView1 = () => {

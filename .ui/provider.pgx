@@ -1,0 +1,501 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "ccde-fec6-02b7-e661",
+			"initialized": true,
+			"props": {
+				"children": [
+					"9c26-7f17-e986-5443",
+					"5c0d-f880-8611-6fe0",
+					"0018-3307-e313-41b6",
+					"749e-aa4c-4191-9311"
+				],
+				"name": "provider",
+				"orientation": "AUTO",
+				"parent": null,
+				"safeAreaEnabled": true
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "AUTO",
+				"safeAreaEnabled": true
+			},
+			"version": "6.7.1"
+		},
+		{
+			"className": ".statusBar",
+			"id": "9c26-7f17-e986-5443",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "ccde-fec6-02b7-e661"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"android": {
+					"color": "rgba( 255, 255, 255, 1 )"
+				}
+			}
+		},
+		{
+			"className": ".headerBar",
+			"id": "5c0d-f880-8611-6fe0",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "ccde-fec6-02b7-e661",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001",
+				"visible": false
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "0018-3307-e313-41b6",
+			"props": {
+				"children": [
+					"0c44-81fe-c520-c2ec",
+					"c494-2357-3386-5716"
+				],
+				"name": "header",
+				"parent": "ccde-fec6-02b7-e661"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN",
+					"alignContent": "STRETCH"
+				},
+				"height": 50,
+				"left": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".imageView",
+			"id": "0c44-81fe-c520-c2ec",
+			"props": {
+				"children": [],
+				"name": "backButton",
+				"parent": "0018-3307-e313-41b6",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"height": 50,
+				"image": "back.png",
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": 40
+			}
+		},
+		{
+			"className": "#ProvidersPage.title",
+			"id": "c494-2357-3386-5716",
+			"props": {
+				"children": [],
+				"name": "title",
+				"parent": "0018-3307-e313-41b6",
+				"text": "Provider Details",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"height": 50,
+				"marginTop": 0,
+				"text": "Provider Details",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".scrollView",
+			"id": "749e-aa4c-4191-9311",
+			"props": {
+				"children": [
+					"d629-cc2a-3cb3-b497",
+					"b72e-f760-ae11-7bef",
+					"6d21-f9b3-e7c9-bc39",
+					"b3b9-8885-1b17-e8a4",
+					"75d3-3147-38b9-0ecd"
+				],
+				"name": "container",
+				"parent": "ccde-fec6-02b7-e661"
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"left": 0,
+				"paddingBottom": 15,
+				"paddingLeft": 15,
+				"paddingRight": 15,
+				"paddingTop": 15,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".mapView",
+			"id": "d629-cc2a-3cb3-b497",
+			"props": {
+				"children": [],
+				"name": "mapView1",
+				"parent": "749e-aa4c-4191-9311",
+				"usePageVariable": true
+			},
+			"type": "MapView",
+			"userProps": {
+				"height": 150,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "b72e-f760-ae11-7bef",
+			"props": {
+				"children": [
+					"23fe-e64f-3af9-8663",
+					"5e97-6adb-98a7-df33",
+					"f754-6742-dd6a-8e86",
+					"334f-49b8-ab65-07bd"
+				],
+				"name": "row1",
+				"parent": "749e-aa4c-4191-9311"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "COLUMN"
+				},
+				"height": 90,
+				"marginTop": 10
+			}
+		},
+		{
+			"className": ".textView",
+			"id": "23fe-e64f-3af9-8663",
+			"props": {
+				"children": [],
+				"name": "textView1",
+				"parent": "b72e-f760-ae11-7bef",
+				"text": "PROVIDER NAME"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"family": "Avenir",
+					"style": "Medium",
+					"bold": false,
+					"italic": false,
+					"size": 12
+				},
+				"height": 25,
+				"text": "PROVIDER NAME",
+				"textColor": "rgba( 29, 29, 38, 0.5 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".textView",
+			"id": "5e97-6adb-98a7-df33",
+			"props": {
+				"children": [],
+				"name": "textView1_1",
+				"parent": "b72e-f760-ae11-7bef",
+				"text": "Smart Pharmacy"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"family": "Avenir",
+					"style": "Roman",
+					"bold": false,
+					"italic": false,
+					"size": 16
+				},
+				"height": 25,
+				"text": "Smart Pharmacy",
+				"textColor": "rgba( 29, 29, 38, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".textView",
+			"id": "f754-6742-dd6a-8e86",
+			"props": {
+				"children": [],
+				"name": "textView1_2",
+				"parent": "b72e-f760-ae11-7bef",
+				"text": "Covered in plan"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"family": "Avenir",
+					"style": "Roman",
+					"bold": false,
+					"italic": false,
+					"size": 15
+				},
+				"height": 25,
+				"text": "Covered in plan",
+				"textColor": "rgba( 51, 176, 87, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "334f-49b8-ab65-07bd",
+			"props": {
+				"children": [],
+				"name": "divider_7",
+				"parent": "b72e-f760-ae11-7bef"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 0.29,
+				"backgroundColor": "rgba( 29, 29, 38, 1 )",
+				"height": 1,
+				"left": 0,
+				"marginTop": 10,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "6d21-f9b3-e7c9-bc39",
+			"props": {
+				"children": [
+					"2c49-4fd9-99e3-93e8",
+					"aa66-c487-50b2-3ccc"
+				],
+				"name": "row2",
+				"parent": "749e-aa4c-4191-9311"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "COLUMN"
+				},
+				"height": 50,
+				"marginTop": 10
+			}
+		},
+		{
+			"className": ".textView",
+			"id": "2c49-4fd9-99e3-93e8",
+			"props": {
+				"children": [],
+				"name": "textView1",
+				"parent": "6d21-f9b3-e7c9-bc39",
+				"text": "ADRESS"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"family": "Avenir",
+					"style": "Medium",
+					"bold": false,
+					"italic": false,
+					"size": 12
+				},
+				"height": 25,
+				"text": "ADRESS",
+				"textColor": "rgba( 29, 29, 38, 0.5 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".textView",
+			"id": "aa66-c487-50b2-3ccc",
+			"props": {
+				"children": [],
+				"name": "textView1_1",
+				"parent": "6d21-f9b3-e7c9-bc39",
+				"text": "100 1St Street San Francisco"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"family": "Avenir",
+					"style": "Roman",
+					"bold": false,
+					"italic": false,
+					"size": 16
+				},
+				"height": 25,
+				"text": "100 1St Street San Francisco",
+				"textColor": "rgba( 29, 29, 38, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "b3b9-8885-1b17-e8a4",
+			"props": {
+				"children": [
+					"3709-b6a7-2069-352e",
+					"1a85-d9d8-239d-2eca"
+				],
+				"name": "row3",
+				"parent": "749e-aa4c-4191-9311"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "COLUMN"
+				},
+				"height": 50,
+				"marginTop": 10
+			}
+		},
+		{
+			"className": ".textView",
+			"id": "3709-b6a7-2069-352e",
+			"props": {
+				"children": [],
+				"name": "textView1",
+				"parent": "b3b9-8885-1b17-e8a4",
+				"text": "PHONE"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"family": "Avenir",
+					"style": "Medium",
+					"bold": false,
+					"italic": false,
+					"size": 12
+				},
+				"height": 25,
+				"text": "PHONE",
+				"textColor": "rgba( 29, 29, 38, 0.5 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".textView",
+			"id": "1a85-d9d8-239d-2eca",
+			"props": {
+				"children": [],
+				"name": "textView1_1",
+				"parent": "b3b9-8885-1b17-e8a4",
+				"text": "+1 900 00 00"
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"family": "Avenir",
+					"style": "Roman",
+					"bold": false,
+					"italic": false,
+					"size": 16
+				},
+				"height": 25,
+				"html": "+1 900 00 00",
+				"text": "+1 900 00 00",
+				"textColor": "rgba( 29, 29, 38, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".flexLayout",
+			"id": "75d3-3147-38b9-0ecd",
+			"props": {
+				"children": [
+					"03ea-4977-880e-6d1b",
+					"0211-f3c8-98ed-e773"
+				],
+				"name": "row4",
+				"parent": "749e-aa4c-4191-9311"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 55,
+				"marginTop": 20
+			}
+		},
+		{
+			"className": ".button",
+			"id": "03ea-4977-880e-6d1b",
+			"props": {
+				"children": [],
+				"name": "button1",
+				"parent": "75d3-3147-38b9-0ecd",
+				"text": "Call Provider",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"backgroundColor": "rgba( 107, 97, 249, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 20,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Medium"
+				},
+				"height": null,
+				"left": 0,
+				"marginRight": 5,
+				"text": "Call Provider",
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "0211-f3c8-98ed-e773",
+			"props": {
+				"children": [],
+				"name": "button2",
+				"parent": "75d3-3147-38b9-0ecd",
+				"text": "Get Directions",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"backgroundColor": "rgba( 159, 38, 237, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"font": {
+					"size": 20,
+					"bold": false,
+					"italic": false,
+					"family": "Avenir",
+					"style": "Medium"
+				},
+				"height": null,
+				"left": 0,
+				"marginLeft": 5,
+				"text": "Get Directions",
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

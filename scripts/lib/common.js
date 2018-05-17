@@ -13,9 +13,7 @@ exports.checkAppUpdate = ()=>{
             if (result.meta) {
                 var isMandatory = (result.meta.isMandatory && result.meta.isMandatory === true) ? true : false;
                 var updateTitle = (result.meta.title) ? result.meta.title : 'A new update is ready!';
-                var updateMessage = "Version " + result.newVersion + " is ready to install.\n\n" +
-                    "What's new?:\n" + JSON.stringify(result.meta.update) +
-                    "\n\n"
+                var updateMessage = "Version " + result.newVersion + " is ready to install.\n\n";
                 //adding mandatory status  
                 updateMessage += (isMandatory) ? "This update is mandatory!" : "Do you want to update?";
                 //Function will run on users' approve

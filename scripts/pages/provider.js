@@ -7,7 +7,9 @@ const Color = require('sf-core/ui/color');
 const Image = require('sf-core/ui/image');
 const Router = require("sf-core/ui/router");
 const Common = require("../lib/common");
+const System = require("sf-core/device/system");
 const ProviderDesign = require('ui/ui_provider');
+const Application = require("sf-core/application");
 
 const Provider = extend(ProviderDesign)(
   // Constructor
@@ -18,9 +20,25 @@ const Provider = extend(ProviderDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-    
+
     this.button1.onPress = () => Common.callPhone("+19000000");
-    this.backButton.onTouchEnded = ()=> Router.goBack();
+    this.button2.onPress = () => {
+      if (System.OS === "Android") {
+        Application.call("https://www.google.com/maps/dir/", {
+          "api": "1",
+          "travelmode": "walking",
+          "dir_action": "navigate",
+          "destination": " 37.4488259,-122.1600047",
+        });
+      }
+      else {
+        Application.call("http://maps.apple.com/", {
+          "daddr": " 37.4488259,-122.1600047",
+          "dirflg": "w"
+        });
+      }
+    };
+    this.backButton.onTouchEnded = () => Router.goBack();
   });
 
 /**
@@ -46,24 +64,24 @@ function onLoad(superOnLoad) {
 const renderMap = (page) => {
   const mapView1 = page.mapView1;
   mapView1.onCreate = () => {
-      mapView1.centerLocation = {
-          latitude: 37.4488259,
-          longitude: -122.1600047
-      };
-      
-      mapView1.touchEnabled = false;
-      mapView1.rotateEnabled = false;
-      
-      mapView1.zoomLevel = 13;
-        const myPin = new MapView.Pin({
-            location:{
-                latitude: 37.4488259,
-                longitude: -122.1600047
-            },
-            image: Image.createFromFile("images://map_pin.png",150, 150),
-        });
-      mapView1.addPin(myPin);
-   }  
+    mapView1.centerLocation = {
+      latitude: 37.4488259,
+      longitude: -122.1600047
+    };
+
+    mapView1.touchEnabled = false;
+    mapView1.rotateEnabled = false;
+
+    mapView1.zoomLevel = 13;
+    const myPin = new MapView.Pin({
+      location: {
+        latitude: 37.4488259,
+        longitude: -122.1600047
+      },
+      image: Image.createFromFile("images://map_pin.png", 150, 150),
+    });
+    mapView1.addPin(myPin);
+  }
 }
 
 module && (module.exports = Provider);

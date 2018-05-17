@@ -11,14 +11,14 @@
 					"5ff7-9675-3cf2-b9aa"
 				],
 				"name": "login",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
 				"backgroundColor": "rgba( 159, 38, 236, 1 )",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
 			"version": "6.7.1"
@@ -83,7 +83,7 @@
 				"ios": {
 					"scrollBarEnabled": false
 				},
-				"layoutHeight": 560,
+				"layoutHeight": 520,
 				"paddingBottom": 30,
 				"paddingLeft": 30,
 				"paddingRight": 30,
@@ -268,8 +268,9 @@
 				"children": [
 					"9135-50cc-a0e5-11ad"
 				],
-				"name": "loginButton",
-				"parent": "545e-b442-9c55-670d"
+				"name": "loginButtonLayout",
+				"parent": "545e-b442-9c55-670d",
+				"usePageVariable": true
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -283,6 +284,7 @@
 				"height": 60,
 				"marginTop": 60,
 				"paddingTop": 10,
+				"usePageVariable": true,
 				"width": null
 			}
 		},
