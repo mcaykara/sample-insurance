@@ -2,41 +2,63 @@
   "#LoginPage": {
     ".page": {
       "backgroundColor":  { 
-				"startColor": "#9F26EC",
-				"endColor": "#547BFF",
+				"startColor": "#FFBB13",
+				"endColor": "#AC603B",
 				"direction": "DIAGONAL_RIGHT"
 			}
     },
     ".title": {
-        "width": null,
-        "backgroundColor": "rgba(0,0,0,0)",
+        "visible": true,
+        "multiline": false,
+        "alpha": 1,
+        "borderColor": "#FFFFFF",
+        "borderWidth": 0,
         "textColor": "#FFFFFF",
         "textAlignment": "MIDCENTER",
         "font": {
-          "size": 30
+          "size": 30,
+          "bold": false,
+          "italic": false,
+          "family": "CenturyGothic",
+          "weight": "Regular"
         },
         "flexProps": {
+          "alignSelf": "AUTO",
+          "positionType": "RELATIVE",
           "flexGrow": 1
         }
     },
     ".usernameIcon" : {
         "width": 30,
         "height": null,
+        "visible": true,
         "imageFillType": "MIDLEFT",
+        "alpha": 1,
+        "borderColor": "#000000",
+        "borderWidth": 0,
+        "alignSelf": "AUTO",
+        "positionType": "RELATIVE",
         "image": "username.png"
     },
     ".usernameInput" : {
         "width": null,
-        "backgroundColor": "rgba(0,0,0,0)",
         "height": 60,
+        "visible": true,
+        "alpha": 1,
+        "borderColor": "#000000",
+        "borderWidth": 0,
         "textColor": "#FFFFFF",
         "textAlignment": "MIDLEFT",
         "font": {
           "size": 15,
+          "bold": false,
+          "italic": false,
           "family": "Avenir",
           "weight": "Book"
         },
         "flexProps": {
+          "alignSelf": "AUTO",
+          "positionType": "RELATIVE",
           "flexGrow": 1
         }
     },

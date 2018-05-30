@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".page",
+			"className": ".page #ProviderPage.page",
 			"id": "ccde-fec6-02b7-e661",
 			"initialized": true,
 			"props": {
@@ -12,13 +12,13 @@
 					"749e-aa4c-4191-9311"
 				],
 				"name": "provider",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
 			"version": "6.7.1"
@@ -60,7 +60,7 @@
 			"id": "0018-3307-e313-41b6",
 			"props": {
 				"children": [
-					"0c44-81fe-c520-c2ec",
+					"c4aa-abe9-e8b6-91e6",
 					"c494-2357-3386-5716"
 				],
 				"name": "header",
@@ -78,25 +78,6 @@
 				"left": 0,
 				"top": 0,
 				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "0c44-81fe-c520-c2ec",
-			"props": {
-				"children": [],
-				"name": "backButton",
-				"parent": "0018-3307-e313-41b6",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"height": 50,
-				"image": "back.png",
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true,
-				"width": 40
 			}
 		},
 		{
@@ -434,7 +415,7 @@
 			}
 		},
 		{
-			"className": ".button",
+			"className": ".button #ProviderPage.callButton",
 			"id": "03ea-4977-880e-6d1b",
 			"props": {
 				"children": [],
@@ -445,28 +426,12 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"backgroundColor": "rgba( 107, 97, 249, 1 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
-				"font": {
-					"size": 20,
-					"bold": false,
-					"italic": false,
-					"family": "Avenir",
-					"style": "Medium"
-				},
-				"height": null,
-				"left": 0,
-				"marginRight": 5,
 				"text": "Call Provider",
-				"top": 0,
-				"usePageVariable": true,
-				"width": null
+				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".button",
+			"className": ".button #ProviderPage.directionsButton",
 			"id": "0211-f3c8-98ed-e773",
 			"props": {
 				"children": [],
@@ -477,24 +442,34 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"backgroundColor": "rgba( 159, 38, 237, 1 )",
-				"flexProps": {
-					"flexGrow": 1
-				},
+				"text": "Get Directions",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".label #ProviderPage.backButton",
+			"id": "c4aa-abe9-e8b6-91e6",
+			"props": {
+				"children": [],
+				"name": "backButton",
+				"parent": "0018-3307-e313-41b6",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"font": {
-					"size": 20,
+					"size": 28,
 					"bold": false,
 					"italic": false,
-					"family": "Avenir",
-					"style": "Medium"
+					"family": "FontAwesome5FreeSolid"
 				},
-				"height": null,
-				"left": 0,
-				"marginLeft": 5,
-				"text": "Get Directions",
-				"top": 0,
+				"height": 50,
+				"text": "",
+				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
-				"width": null
+				"width": 40
 			}
 		}
 	]

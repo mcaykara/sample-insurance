@@ -1,0 +1,38 @@
+{
+  "#ProviderPage": {
+    ".page": {
+      "backgroundColor": "#F8F8F8"
+    },
+    ".backButton": {
+      "textColor": "#883EF0"
+    },
+    ".callButton": {
+      "backgroundColor": "#6B61F9",
+      "height": null,
+      "width": null,
+      "marginRight": 5,
+      "font": {
+        "size": 20,
+        "family": "Avenir",
+        "weight": "Medium"
+      },
+      "flexProps": {
+        "flexGrow": 1
+      }
+    },
+    ".directionsButton": {
+      "backgroundColor": "#9F26ED",
+      "height": null,
+      "width": null,
+      "marginLeft": 5,
+      "font": {
+        "size": 20,
+        "family": "Avenir",
+        "weight": "Medium"
+      },
+      "flexProps": {
+        "flexGrow": 1
+      }
+    }
+  }
+}

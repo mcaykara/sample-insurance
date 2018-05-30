@@ -10,17 +10,17 @@ const Router = require("sf-core/ui/router");
 const Providers_mapDesign = require('ui/ui_providers_map');
 
 const Providers_map = extend(Providers_mapDesign)(
-  // Constructor
-  function(_super) {
-    // Initalizes super class for this page scope
-    _super(this);
-    // overrides super.onShow method
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    // overrides super.onLoad method
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    // Constructor
+    function(_super) {
+        // Initalizes super class for this page scope
+        _super(this);
+        // overrides super.onShow method
+        this.onShow = onShow.bind(this, this.onShow.bind(this));
+        // overrides super.onLoad method
+        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
-    this.listButton.onTouchEnded = ()=> Router.goBack();
-  });
+        this.listButton.onTouchEnded = () => Router.goBack();
+    });
 
 /**
  * @event onShow
@@ -29,7 +29,7 @@ const Providers_map = extend(Providers_mapDesign)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-  superOnShow();
+    superOnShow();
 }
 
 /**
@@ -38,68 +38,67 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
-  superOnLoad();
-  renderMap(this);
+    superOnLoad();
+    renderMap(this);
 }
 
 const renderMap = (page) => {
-  
-  var myDataSet = [
-         {
+
+    var myDataSet = [{
             label1: 'Smart Pharmacy',
             label2: 'Pharmacy',
             label3: '0.7 miles',
-            icon: Image.createFromFile("images://map_icon1.png",150, 150),
+            icon: Image.createFromFile("images://map_icon1.png", 100, 100),
             location: {
-                  latitude: 37.455,
-                  longitude: -122.1600047
-              }
+                latitude: 37.455,
+                longitude: -122.1600047
+            }
         },
         {
             label1: 'John Smart M.D.',
             label2: 'Doctor',
             label3: '1.2 miles',
-            icon: Image.createFromFile("images://map_icon2.png",150, 150),
+            icon: Image.createFromFile("images://map_icon2.png", 100, 100),
             location: {
-                  latitude: 37.4488559,
-                  longitude: -122.1630047
-              }
+                latitude: 37.4488559,
+                longitude: -122.1630047
+            }
         },
-         {
+        {
             label1: 'Smart Hospital',
             label2: 'Hospital',
             label3: '5.2 miles',
-            icon: Image.createFromFile("images://map_icon3.png", 150,  150),
+            icon: Image.createFromFile("images://map_icon3.png", 100, 100),
             location: {
-                  latitude: 37.4488759,
-                  longitude: -122.1550047
-              }
+                latitude: 37.4488759,
+                longitude: -122.1550047
+            }
         },
     ];
-    
-  page.mapView1.onCreate = () => {
+
+    page.mapView1.onCreate = () => {
         page.mapView1.centerLocation = {
             latitude: 37.4488259,
             longitude: -122.1600047
         };
-        
+
         page.mapView1.zoomLevel = 13;
-        
-        myDataSet.forEach(data=>{
-          const myPin = new MapView.Pin({
-              location: data.location,
-              image: data.icon,
-              title: data.label1,
-              color: Color.RED,
-              onPress: function() {
-                  Application.call("geo:" + myPin.location.latitude + ',' + myPin.location.longitude, {
-                      'hl': 'en',
-                  });
-              }
-          });
-          page.mapView1.addPin(myPin);
+
+        myDataSet.forEach(data => {
+            const myPin = new MapView.Pin({
+                location: data.location,
+                image: data.icon,
+                title: data.label1,
+                color: Color.RED,
+                onPress: function() {
+                    Application.call("geo:" + myPin.location.latitude + ',' + myPin.location.longitude, {
+                        'hl': 'en',
+                    });
+                }
+            });
+            page.mapView1.addPin(myPin);
         });
-   }  
+    }
 }
 
 module && (module.exports = Providers_map);

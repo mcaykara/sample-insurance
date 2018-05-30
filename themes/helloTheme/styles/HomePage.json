@@ -1,0 +1,21 @@
+{
+  "#HomePage": {
+    ".headerTransparent": {
+      "alpha": 0.86,
+      "backgroundColor": {
+        "startColor": "#9F26EC",
+        "endColor": "#547BFF",
+        "direction": "DIAGONAL_RIGHT"
+      },
+      "height": null,
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0,
+      "flexProps": {
+        "positionType": "ABSOLUTE",
+        "flexGrow": 1
+      }
+    }
+  }
+}

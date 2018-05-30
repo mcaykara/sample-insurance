@@ -1,0 +1,14 @@
+{
+  "#HomePage": {
+    ".page": {
+      "backgroundColor": "#F2ECE2"
+    },
+    ".headerTransparent": {
+      "backgroundColor":  { 
+				"startColor": "#FFBB13",
+				"endColor": "#AC603B",
+				"direction": "DIAGONAL_RIGHT"
+			}
+    }
+  }
+}

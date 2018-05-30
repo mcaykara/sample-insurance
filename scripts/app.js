@@ -12,13 +12,24 @@ const Color = require("sf-core/ui/color");
 const Navigator = require("sf-core/ui/navigator");
 const Data = require('sf-core/data');
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
+const Notifications = require("sf-core/notifications");
 
+Notifications.registerForPushNotifications(function(e) {
+  Data.setStringVariable('pushToken', e.token);
+}, function() {
+  alert("Push Failed:");
+  console.log("Register failed.");
+});
 
-if(!Data.getBooleanVariable('instaBugLoaded'))
-{
+Application.onReceivedNotification = function(e) {
+  alert("Notification: " + typeof e);
+  alert("Notification: " + JSON.stringify(e.remote));
+}
+
+if (!Data.getBooleanVariable('instaBugLoaded')) {
     InstaBug.build("3befcc60214c7d4f020f466763e1eed0", InstaBug.InvocationEvent.SHAKE);
     InstaBug.showIntroMessage();
-    Data.setBooleanVariable('instaBugLoaded',true); 
+    Data.setBooleanVariable('instaBugLoaded', true);
 }
 
 // Set uncaught exception handler, all exceptions that are not caught will
@@ -38,7 +49,7 @@ navigator.go("login");
 global.tabBar = null;
 global.tabBar = new BottomTabBar({
     backgroundColor: Color.create("#F8F8F8"),
-    itemColor: {normal: Color.create(80, 0, 0, 0), selected: Color.create("#893EF1")}
+    itemColor: { normal: Color.create(80, 0, 0, 0), selected: Color.create("#893EF1") }
 });
 
 global.tabBar.children = {};

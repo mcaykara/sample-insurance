@@ -1,5 +1,14 @@
 {
   "#ProvidersPage": {
+     ".page": {
+      "backgroundColor": "#F8F8F8"
+    },
+    ".backButton": {
+      "textColor": "#883EF0"
+    },
+    ".locationButton": {
+      "textColor": "#883EF0"
+    },
     ".title": {
         "visible": true,
         "multiline": false,

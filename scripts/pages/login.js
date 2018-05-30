@@ -8,8 +8,14 @@ const Router = require("sf-core/ui/router");
 const Dialog = require("sf-core/ui/dialog");
 const FlexLayout = require("sf-core/ui/flexlayout");
 const System = require('sf-core/device/system');
+const Common = require("../lib/common");
+const View = require('sf-core/ui/view');
 const ActivityIndicator = require('sf-core/ui/activityindicator');
-
+const rau = require("sf-extension-utils").rau;
+const Animator = require('sf-core/ui/animator');
+const Button = require('sf-core/ui/button');
+const Data = require('sf-core/data');
+const fingerprint = require("sf-extension-utils").fingerprint;
 
 const Login = extend(LoginDesign)(
     // Constructor
@@ -31,6 +37,8 @@ const Login = extend(LoginDesign)(
 function onShow(superOnShow) {
     superOnShow();
     this.headerBar.visible = false;
+    this.pushToken.text = Data.getStringVariable('pushToken');
+    rau.checkUpdate();
 }
 
 /**
@@ -44,10 +52,11 @@ function onLoad(superOnLoad) {
 }
 
 const renderUI = (page) => {
-    page.layout.backgroundColor = Color.createGradient({
-        direction: Color.GradientDirection.DIAGONAL_RIGHT,
-        startColor: Color.create("#9F26EC"),
-        endColor: Color.create("#547BFF")
+    var animationRootView = page.layout;
+    Animator.animate(animationRootView, 400, function() {
+
+    }).complete(function() {
+
     });
 
     page.usernameTextInput.text = lang['loginPage']['usernameInputHint'];
@@ -87,7 +96,7 @@ const renderUI = (page) => {
         visible: false,
         touchEnabled: true,
         positionType: FlexLayout.PositionType.ABSOLUTE,
-        top: System.OS === "Android" ? 10: 23,
+        top: System.OS === "Android" ? 10 : 23,
         right: 10
     });
     const myActivityIndicator = new ActivityIndicator({
@@ -98,19 +107,34 @@ const renderUI = (page) => {
             type: ActivityIndicator.iOS.Type.WHITE
         }
     });
-    
+
     loadingLayout.addChild(myActivityIndicator);
     loadingLayout.justifyContent = FlexLayout.JustifyContent.CENTER;
 
     page.loginButtonLayout.addChild(loadingLayout);
 
+    fingerprint.init({
+        userNameTextBox: page.usernameTextInput,
+        passwordTextBox: page.passwordTextInput,
+        button: page.loginButton,
+        autoEvents: true,
+        callback: (err, fingerprintResult) => {
+            fingerprintResult && fingerprintResult.success();
+            setTimeout(() => {
+                loadingLayout.visible = false;
+                Router.go("tabs");
+            }, 1500);
+        }
+    });
+
+    page.title.onTouch = () => {
+        page.usernameTextInput.text = "insurance";
+        page.passwordTextInput.text = "123456";
+    };
+
     page.loginButton.onPress = () => {
         loadingLayout.visible = true;
-
-        setTimeout(() => {
-            loadingLayout.visible = false;
-            Router.go("tabs");
-        }, 1500);
+        fingerprint.loginWithFingerprint();
     }
 }
 

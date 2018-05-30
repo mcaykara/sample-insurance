@@ -1,0 +1,32 @@
+{
+  "#ProviderSearchPage": {
+    ".page": {
+      "backgroundColor": "#F2ECE2"
+    },
+    ".searchButton": {
+      "backgroundColor": "#B57C42",
+      "height": 40,
+      "width": null,
+      "marginLeft": 20,
+      "marginRight": 20,
+      "font": {
+        "size": 18,
+        "family": "Avenir",
+        "weight": "Medium"
+      }
+    },
+    ".switch": {
+      "thumbOffColor": "#22CFC5",
+      "thumbOnColor": "#22CFC5",
+      "toggleOnColor": "#C7F3F0",
+      "alpha": 1,
+      "minHeight": 31,
+      "minWidth": 51,
+      "visible": true,
+      "flexProps": {
+        "alignSelf": "CENTER",
+        "positionType": "RELATIVE"
+      }
+    }
+  }
+}

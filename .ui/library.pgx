@@ -12,13 +12,13 @@
 					"b4da-b365-87fe-dd62"
 				],
 				"name": "library",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
 			"version": "6.7.1"

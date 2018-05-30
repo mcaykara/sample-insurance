@@ -9,6 +9,8 @@ const System = require('sf-core/device/system');
 const AlertView = require('sf-core/ui/alertview');
 const Application = require("sf-core/application");
 const WebBrowser = require('sf-core/ui/webbrowser');
+const Data = require('sf-core/data');
+const Notifications = require("sf-core/notifications");
 
 const Info = extend(InfoDesign)(
   // Constructor
@@ -41,27 +43,42 @@ function onLoad(superOnLoad) {
   superOnLoad();
   renderUI(this);
   this.fingerprintSwitch.onToggleChanged = (state) => {
-    if (System.fingerPrintAvailable) {
-      System.validateFingerPrint({
-        android: {
-          title: "Title"
-        },
-        message: "Login with fingerprint",
-        onSuccess: function() {
-          alert(lang['loginPage']['loginSuccessAlertMessage']);
-        },
-        onError: function() {
-          alert(lang['loginPage']['loginFailedAlertMessage']);
+    if (state) {
+      if (System.fingerPrintAvailable) {
+        System.validateFingerPrint({
+          message: "Login with fingerprint",
+          onSuccess: function() {
+            alert(lang['loginPage']['loginSuccessAlertMessage']);
+          },
+          onError: function() {
+            alert(lang['loginPage']['loginFailedAlertMessage']);
+          }
+        });
+      }
+      else {
+        if (System.OS === 'iOS') {
+          alert("Fingerprint is not available. You should enable TouchID to use this authentication.");
         }
+        else {
+          alert("Fingerprint is not available. If your device supprorts fingerprint, you should add at least one fingerprint.");
+        }
+      }
+    }
+  }
+
+  this.notificationsSwitch.onToggleChanged = (state) => {
+    if (state) {
+      Notifications.registerForPushNotifications(function(e) {
+        Data.setStringVariable('pushToken', e.token);
+        alert(e.token);
+      }, function() {
+        alert("Push Failed:");
+        console.log("Register failed.");
       });
     }
     else {
-      if (System.OS === 'iOS') {
-        alert("Fingerprint is not available. You should enable TouchID to use this authentication.");
-      }
-      else {
-        alert("Fingerprint is not available. If your device supprorts fingerprint, you should add at least one fingerprint.");
-      }
+      alert('Unregistered push notifications!')
+      Notifications.unregisterForPushNotifications();
     }
   }
 }
@@ -76,13 +93,38 @@ const renderUI = (page) => {
   page.rememberMeTitle.text = lang['infoPage']['rememberMeTitle'];
   page.fingerprintTitle.text = lang['infoPage']['fingerprintTitle'];
   page.notificationsTitle.text = lang['infoPage']['notificationsTitle'];
+  page.themeTitle.text = lang['infoPage']['themeTitle'];
   page.version.text = 'Version ' + Application.version;
 
   page.row.onTouchEnded = () => {
     const webOptions = new WebBrowser.Options();
-    webOptions.url = "https://developer.smartface.io/v1.1/docs/webbrowser"
+    webOptions.url = "https://www.smartface.io/smartface"
     WebBrowser.show(page, webOptions);
   }
+
+  page.purpleButton.onTouchEnded = () => {
+    page.purpleButton.borderWidth = 3;
+    page.orangeButton.borderWidth = 0;
+    page.themeContext({
+      type: "changeTheme",
+      theme: "helloTheme"
+    });
+    page.dispatch({
+      type: "invalidate"
+    });
+  };
+
+  page.orangeButton.onTouchEnded = () => {
+    page.purpleButton.borderWidth = 0;
+    page.orangeButton.borderWidth = 3;
+    page.themeContext({
+      type: "changeTheme",
+      theme: "orangeTheme"
+    });
+    page.dispatch({
+      type: "invalidate"
+    });
+  };
 
   page.icon2.onTouchEnded = () => Common.callPhone("+1-917-696-8662");
   page.icon3.onTouchEnded = () => Application.call("mailto:sales@smartface.io");
@@ -104,7 +146,7 @@ const logout = () => {
   });
 
   myAlertView.addButton({
-    type: AlertView.Android.ButtonType.POSITIVE,
+    type: AlertView.Android.ButtonType.NEGATIVE,
     text: "No",
     onClick: function() {}
   });

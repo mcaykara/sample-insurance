@@ -4,7 +4,8 @@
 			"currentTheme": "helloTheme",
 			"themes": [
 				"defaultTheme",
-				"helloTheme"
+				"helloTheme",
+				"orangeTheme"
 			],
 			"baseTheme": "helloTheme"
 		},

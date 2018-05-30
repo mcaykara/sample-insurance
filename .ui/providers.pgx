@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".page",
+			"className": ".page #ProvidersPage.page",
 			"id": "c0a3-8964-e162-a5ef",
 			"initialized": true,
 			"props": {
@@ -12,14 +12,13 @@
 					"baa0-cf8d-8271-2bfd"
 				],
 				"name": "providers",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"backgroundColor": "rgba( 248, 248, 248, 1 )",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
 			"version": "6.7.1"
@@ -61,9 +60,9 @@
 			"id": "3d74-5a73-c3a9-6b7a",
 			"props": {
 				"children": [
-					"f19c-0359-4e65-a6c7",
+					"d176-db59-bb32-83c4",
 					"966d-a37d-9bd0-2888",
-					"5e08-8db9-0a9a-330a"
+					"354d-26fc-3c02-1685"
 				],
 				"name": "header",
 				"parent": "c0a3-8964-e162-a5ef"
@@ -145,39 +144,53 @@
 			}
 		},
 		{
-			"className": ".imageView",
-			"id": "f19c-0359-4e65-a6c7",
+			"className": ".label #ProvidersPage.backButton",
+			"id": "d176-db59-bb32-83c4",
 			"props": {
 				"children": [],
 				"name": "backButton",
 				"parent": "3d74-5a73-c3a9-6b7a",
+				"text": "",
 				"usePageVariable": true
 			},
-			"type": "ImageView",
+			"type": "Label",
 			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"font": {
+					"size": 28,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
 				"height": 50,
-				"image": "back.png",
-				"left": 0,
-				"top": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
 				"width": 40
 			}
 		},
 		{
-			"className": ".imageView",
-			"id": "5e08-8db9-0a9a-330a",
+			"className": ".label #ProvidersPage.locationButton",
+			"id": "354d-26fc-3c02-1685",
 			"props": {
 				"children": [],
 				"name": "locationButton",
 				"parent": "3d74-5a73-c3a9-6b7a",
+				"text": "",
 				"usePageVariable": true
 			},
-			"type": "ImageView",
+			"type": "Label",
 			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"font": {
+					"size": 28,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
 				"height": 50,
-				"image": "location.png",
-				"left": 0,
-				"top": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
 				"usePageVariable": true,
 				"width": 40
 			}

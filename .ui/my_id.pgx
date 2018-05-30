@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".page",
+			"className": ".page #MyIdPage.page",
 			"id": "5a9f-bc5d-837b-0ef7",
 			"initialized": true,
 			"props": {
@@ -12,24 +12,13 @@
 					"d8d5-355c-d9ac-aabf"
 				],
 				"name": "my_id",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"backgroundColor": "rgba( 248, 248, 248, 1 )",
-				"flexProps": {
-					"alignItems": "STRETCH",
-					"flexDirection": "COLUMN",
-					"flexWrap": "NOWRAP",
-					"justifyContent": "FLEX_START",
-					"alignContent": "STRETCH",
-					"direction": "LTR"
-				},
-				"orientation": "AUTO",
-				"paddingLeft": 0,
-				"paddingRight": 0,
+				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
 			"version": "6.7.1"
@@ -141,7 +130,7 @@
 				"children": [
 					"bf1e-ced7-95c6-d9ef",
 					"80ee-f090-7840-7539",
-					"2011-2708-a1ba-d6b7"
+					"7727-8fea-e0ca-9704"
 				],
 				"name": "rowLayout",
 				"parent": "f41a-c147-e578-69f6"
@@ -158,6 +147,7 @@
 		},
 		{
 			"className": ".imageView",
+			"hiddenComponent": false,
 			"id": "bf1e-ced7-95c6-d9ef",
 			"props": {
 				"children": [],
@@ -202,21 +192,6 @@
 				"textColor": "rgba( 48, 48, 48, 1 )",
 				"usePageVariable": true,
 				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "2011-2708-a1ba-d6b7",
-			"props": {
-				"children": [],
-				"name": "bag",
-				"parent": "794b-41b0-f7e3-ef03"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"height": 50,
-				"image": "bag.png",
-				"width": 28
 			}
 		},
 		{
@@ -586,9 +561,9 @@
 			"id": "f01f-ec94-0208-b521",
 			"props": {
 				"children": [
-					"5d3a-c921-9062-b652",
-					"90dc-e571-7631-315c",
-					"1640-0398-34d6-82fd"
+					"423b-16b8-3bf6-78fa",
+					"9c59-6bed-bf0b-3d14",
+					"7586-8ba5-540a-77b2"
 				],
 				"name": "rowLayout_5",
 				"parent": "f41a-c147-e578-69f6"
@@ -602,57 +577,6 @@
 				},
 				"height": 50,
 				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "5d3a-c921-9062-b652",
-			"props": {
-				"children": [],
-				"name": "detail",
-				"parent": "f01f-ec94-0208-b521",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"height": 50,
-				"image": "detail.png",
-				"usePageVariable": true,
-				"width": 40
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "90dc-e571-7631-315c",
-			"props": {
-				"children": [],
-				"name": "share1",
-				"parent": "f01f-ec94-0208-b521",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"height": 50,
-				"image": "share.png",
-				"usePageVariable": true,
-				"width": 40
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "1640-0398-34d6-82fd",
-			"props": {
-				"children": [],
-				"name": "download",
-				"parent": "f01f-ec94-0208-b521",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"height": 50,
-				"image": "download.png",
-				"usePageVariable": true,
-				"width": 40
 			}
 		},
 		{
@@ -706,7 +630,7 @@
 				"children": [
 					"29a1-8343-173f-6f2f",
 					"c8d8-87b3-04bc-cd91",
-					"0c6d-494a-7876-3681"
+					"1764-688f-3dca-3e42"
 				],
 				"name": "rowLayout",
 				"parent": "33af-984f-9470-9143"
@@ -765,21 +689,6 @@
 				"text": "SmartCare",
 				"textColor": "rgba( 48, 48, 48, 1 )",
 				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "0c6d-494a-7876-3681",
-			"props": {
-				"children": [],
-				"name": "bag",
-				"parent": "7f06-83fa-15d6-4041"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"height": 50,
-				"image": "car.png",
-				"width": 28
 			}
 		},
 		{
@@ -1041,9 +950,9 @@
 			"id": "7fbe-9bc8-9ac1-c9fa",
 			"props": {
 				"children": [
-					"537a-6285-eb70-1edd",
-					"2777-f795-9f22-5cda",
-					"8ada-92c1-2ae2-61a2"
+					"05b3-b034-4168-badb",
+					"737d-cc5b-7da2-92a5",
+					"14be-ff0e-fc27-6261"
 				],
 				"name": "rowLayout_5",
 				"parent": "33af-984f-9470-9143"
@@ -1057,57 +966,6 @@
 				},
 				"height": 50,
 				"width": null
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "537a-6285-eb70-1edd",
-			"props": {
-				"children": [],
-				"name": "detail",
-				"parent": "7fbe-9bc8-9ac1-c9fa",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"height": 50,
-				"image": "detail.png",
-				"usePageVariable": true,
-				"width": 40
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "2777-f795-9f22-5cda",
-			"props": {
-				"children": [],
-				"name": "share2",
-				"parent": "7fbe-9bc8-9ac1-c9fa",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"height": 50,
-				"image": "share.png",
-				"usePageVariable": true,
-				"width": 40
-			}
-		},
-		{
-			"className": ".imageView",
-			"id": "8ada-92c1-2ae2-61a2",
-			"props": {
-				"children": [],
-				"name": "download",
-				"parent": "7fbe-9bc8-9ac1-c9fa",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
-			"userProps": {
-				"height": 50,
-				"image": "download.png",
-				"usePageVariable": true,
-				"width": 40
 			}
 		},
 		{
@@ -1725,6 +1583,222 @@
 				"textAlignment": "MIDRIGHT",
 				"textColor": "rgba( 48, 48, 48, 1 )",
 				"width": null
+			}
+		},
+		{
+			"className": ".label #InfoPage.callUsButton",
+			"id": "7727-8fea-e0ca-9704",
+			"props": {
+				"children": [],
+				"name": "bag",
+				"parent": "794b-41b0-f7e3-ef03",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
+				"height": null,
+				"left": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 35
+			}
+		},
+		{
+			"className": ".label #InfoPage.callUsButton",
+			"id": "7586-8ba5-540a-77b2",
+			"props": {
+				"children": [],
+				"name": "download",
+				"parent": "f01f-ec94-0208-b521",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
+				"height": null,
+				"left": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 35
+			}
+		},
+		{
+			"className": ".label #InfoPage.callUsButton",
+			"id": "9c59-6bed-bf0b-3d14",
+			"props": {
+				"children": [],
+				"name": "share1",
+				"parent": "f01f-ec94-0208-b521",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
+				"height": null,
+				"left": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 35
+			}
+		},
+		{
+			"className": ".label #InfoPage.callUsButton",
+			"id": "423b-16b8-3bf6-78fa",
+			"props": {
+				"children": [],
+				"name": "detail",
+				"parent": "f01f-ec94-0208-b521",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
+				"height": null,
+				"left": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 35
+			}
+		},
+		{
+			"className": ".label #InfoPage.callUsButton",
+			"id": "737d-cc5b-7da2-92a5",
+			"props": {
+				"children": [],
+				"name": "share2",
+				"parent": "7fbe-9bc8-9ac1-c9fa",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
+				"height": null,
+				"left": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 35
+			}
+		},
+		{
+			"className": ".label #InfoPage.callUsButton",
+			"id": "05b3-b034-4168-badb",
+			"props": {
+				"children": [],
+				"name": "detail",
+				"parent": "7fbe-9bc8-9ac1-c9fa",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
+				"height": null,
+				"left": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 35
+			}
+		},
+		{
+			"className": ".label #InfoPage.callUsButton",
+			"id": "14be-ff0e-fc27-6261",
+			"props": {
+				"children": [],
+				"name": "download",
+				"parent": "7fbe-9bc8-9ac1-c9fa",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
+				"height": null,
+				"left": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 35
+			}
+		},
+		{
+			"className": ".label #InfoPage.callUsButton",
+			"id": "1764-688f-3dca-3e42",
+			"props": {
+				"children": [],
+				"name": "car",
+				"parent": "7f06-83fa-15d6-4041",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
+				"height": null,
+				"left": 0,
+				"text": "",
+				"textAlignment": "MIDCENTER",
+				"top": 0,
+				"usePageVariable": true,
+				"width": 35
 			}
 		}
 	]

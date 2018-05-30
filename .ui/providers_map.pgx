@@ -11,12 +11,12 @@
 					"a1d8-c7d5-2dba-1929"
 				],
 				"name": "providers_map",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null
 			},
 			"type": "Page",
 			"userProps": {
-				"orientation": "AUTO"
+				"orientation": "PORTRAIT"
 			},
 			"version": "6.7.1"
 		},
@@ -58,7 +58,7 @@
 			"props": {
 				"children": [
 					"8643-72e0-9d59-d525",
-					"4457-cbd9-519e-96dc"
+					"e926-ca47-4c51-93eb"
 				],
 				"name": "container",
 				"parent": "272f-f0af-3e89-eb5b"
@@ -94,29 +94,35 @@
 			}
 		},
 		{
-			"className": ".imageView",
-			"hiddenComponent": false,
-			"id": "4457-cbd9-519e-96dc",
+			"className": ".label #InfoPage.callUsButton",
+			"id": "e926-ca47-4c51-93eb",
 			"props": {
 				"children": [],
 				"name": "listButton",
 				"parent": "a1d8-c7d5-2dba-1929",
+				"text": "",
 				"usePageVariable": true
 			},
-			"type": "ImageView",
+			"type": "Label",
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"bottom": 0,
 				"flexProps": {
-					"positionType": "ABSOLUTE",
-					"alignSelf": "AUTO"
+					"positionType": "ABSOLUTE"
 				},
-				"height": 40,
-				"image": "menu.png",
-				"imageFillType": "NORMAL",
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid"
+				},
+				"height": 35,
 				"right": 20,
+				"text": "",
+				"textAlignment": "MIDCENTER",
 				"top": 30,
 				"usePageVariable": true,
-				"width": 40
+				"width": 35
 			}
 		}
 	]

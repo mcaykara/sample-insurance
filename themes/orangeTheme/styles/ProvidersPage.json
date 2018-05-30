@@ -1,10 +1,13 @@
 {
-  "#InfoPage": {
-    ".page": {
-      "backgroundColor": "#F8F8F8"
+  "#ProvidersPage": {
+     ".page": {
+      "backgroundColor": "#F2ECE2"
     },
-     ".callUsButton": {
-      "textColor": "#883EF0"
+    ".backButton": {
+      "textColor": "#22CFC5"
+    },
+    ".locationButton": {
+      "textColor": "#22CFC5"
     },
     ".title": {
         "visible": true,
@@ -29,22 +32,65 @@
         },
         "marginTop": 10
     },
-    ".listItemTitle": {
-        "visible": true,
-        "multiline": false,
-        "alpha": 0.8,
-        "textColor": "#000000",
-        "textAlignment": "MIDLEFT",
+    ".listItemContainer": {
+      "backgroundColor": "rgba(0,0,0,0)",
+      "height": 70,
+      "marginLeft":20,
+      "marginRight":20,
+      "paddingBottom": 10,
+      "paddingTop":15,
+      "width": null,
+      "flexProps": {
+        "flexDirection": "ROW"
+      }
+    },
+    ".listItemLeft": {
+        "height": null,
+        "flexProps": {
+          "flexGrow": 1
+        }
+    },
+    ".listItemRight": {
+        "height": null,
+        "flexProps": {
+          "flexGrow": 0.5
+        }
+    },
+    ".listItemRightLabel": {
+        "backgroundColor": "#D4B9F9",
+        "borderRadius": 30,
+        "width": null,
+        "height": null,
+        "textColor": "#303030",
         "font": {
           "size": 16,
           "bold": false,
           "italic": false,
           "family": "Avenir",
-          "weight": "Multiple"
+          "weight": "Medium"
+        },
+        "textAlignment": "MIDCENTER",
+        "flexProps": {
+          "flexGrow": 1
+        }
+    },
+    ".listItemLeftLabel1": {
+        "font": {
+          "size": 16,
+          "family": "Avenir",
+          "weight": "Roman"
         },
         "flexProps": {
-          "alignSelf": "AUTO",
-          "positionType": "RELATIVE",
+          "flexGrow": 1
+        }
+    },
+    ".listItemLeftLabel2": {
+        "font": {
+          "size": 15,
+          "family": "Avenir",
+          "weight": "Book"
+        },
+        "flexProps": {
           "flexGrow": 1
         }
     },
@@ -68,7 +114,6 @@
     ".switch": {
       "thumbOffColor": "#883EF0",
       "thumbOnColor": "#883EF0",
-      "toggleOnColor": "#D6BEF9",
       "alpha": 1,
       "minHeight": 31,
       "minWidth": 51,

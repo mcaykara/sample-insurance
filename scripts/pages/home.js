@@ -10,13 +10,11 @@ const Font = require('sf-core/ui/font');
 const TextAlignment = require('sf-core/ui/textalignment');
 const AMCharts = require("sf-extension-amcharts");
 const WebView = require('sf-core/ui/webview');
-const ScrollView = require('sf-core/ui/scrollview');
 const ListView = require('sf-core/ui/listview');
 const ListViewItem = require('sf-core/ui/listviewitem');
-const Image = require('sf-core/ui/image');
-const ImageView = require('sf-core/ui/imageview');
-const StatusBarStyle = require('sf-core/ui/statusbarstyle');
-const Common = require("../lib/common");
+const Notifications = require("sf-core/notifications");
+const Application = require("sf-core/application");
+const Network = require('sf-core/device/network');
 
 const Home = extend(HomeDesign)(
   // Constructor
@@ -28,6 +26,12 @@ const Home = extend(HomeDesign)(
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
     // overrides super.onShow method
     this.onShow = onShow.bind(this, this.onShow.bind(this));
+
+    // Network.onConnectionTypeChanged(function(connection) {
+    //   if (connection == Network.ConnectionType.NONE) {
+    //     alert("No internet connection!");
+    //   }
+    // });
   });
 
 /**
@@ -38,7 +42,6 @@ const Home = extend(HomeDesign)(
  */
 function onShow(superOnShow) {
   superOnShow();
-  Common.checkAppUpdate();
   this.statusBar.visible = true;
   this.statusBar.color = Color.TRANSPARENT;
 }
@@ -51,26 +54,10 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
   superOnLoad();
   var page = this;
-
-renderBody(page);
-  
-
-  // var containerFlex = new ScrollView({
-  //   flexGrow: 1
-  // });
-
-  // renderHeader(page, containerFlex);
-  // renderBody(page, containerFlex);
-  // page.layout.addChild(containerFlex);
+  renderBody(page);
 }
 
 var renderBody = (page) => {
-  
-  page.transparentLayout.backgroundColor = Color.createGradient({
-    direction: Color.GradientDirection.DIAGONAL_RIGHT,
-    startColor: Color.create("#9F26EC"),
-    endColor: Color.create("#547BFF")
-  });
   page.children = page.children || {};
 
   const chartFlex = page.children.chartFlex = new FlexLayout({
@@ -106,10 +93,10 @@ var renderBody = (page) => {
   const amCharts = new AMCharts({ webView: wvChart });
 
   page.header.addChild(chartFlex);
-  
-    page.header.addChild(new Label({
+
+  page.header.addChild(new Label({
     height: 50,
-     positionType: FlexLayout.PositionType.ABSOLUTE,
+    positionType: FlexLayout.PositionType.ABSOLUTE,
     text: lang['homePage']['title'],
     left: 0,
     top: 15,
@@ -128,7 +115,7 @@ var renderBody = (page) => {
       console.error(e);
     });
   });
-  
+
   page.container.layout.addChild(listItemType1(lang['homePage']['coverageUsage'], "73% Medical - Dental"));
   page.container.layout.addChild(listDivider());
   page.container.layout.addChild(listItemType1(lang['homePage']['policyID'], "124293752047467034"));
@@ -162,6 +149,7 @@ var listView1 = () => {
   var myListView = new ListView({
     rowHeight: 80,
     height: 158,
+    backgroundColor: Color.WHITE,
     itemCount: myDataSet.length,
   });
 
@@ -237,6 +225,7 @@ var listItemType1 = (title, val) => {
     paddingTop: 5,
     paddingBottom: 10,
     flexDirection: FlexLayout.FlexDirection.ROW,
+    backgroundColor: Color.WHITE
   });
 
   const titleLabel = new Label({
@@ -264,7 +253,6 @@ var listDivider = () => {
     height: 1,
     marginLeft: 10,
     marginRight: 10,
-    marginTop: 10,
     alpha: 0.29,
     backgroundColor: Color.create("#1D1D26")
   });

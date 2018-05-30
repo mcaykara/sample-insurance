@@ -63,7 +63,6 @@ SMF.i18n.defineLanguage('tr', {
 		"fingerPrintTitle": "Parmak izi kullan",
 		"loginButtonText": "Giriş",
 		"forgotPasswordTitle": "Şifremi Unuttum",
-		"clientContactTitle": "Müşteri değilmisiniz? Bizden teklif alın",
 		"loginSuccessAlertMessage": "Başarıyla giriş yaptınız!",
 		"loginFailedAlertMessage": "Giriş Başarısız!"
 	},
@@ -104,6 +103,7 @@ Yıl | Tip`,
 		"rememberMeTitle":"Beni hatırla",
 		"fingerprintTitle":"Parmak izi kullan",
 		"notificationsTitle":"Bildirimler",
+		"themeTitle":"Tema",
 	},
 	"tabs":{
 		"home": "Anasayfa",

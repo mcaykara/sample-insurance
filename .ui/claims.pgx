@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".page",
+			"className": ".page #ClaimsPage.page",
 			"id": "2f80-fcbc-70c6-ea6e",
 			"initialized": true,
 			"props": {
@@ -12,14 +12,13 @@
 					"b031-4858-1212-4d4a"
 				],
 				"name": "claims",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"backgroundColor": "rgba( 248, 248, 248, 1 )",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
 			"version": "6.7.1"
@@ -97,6 +96,7 @@
 			"type": "ScrollView",
 			"userProps": {
 				"align": "VERTICAL",
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH",

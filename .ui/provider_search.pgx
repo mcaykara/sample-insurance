@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".page",
+			"className": ".page #ProviderSearchPage.page",
 			"id": "5d19-6c8c-b9c3-1090",
 			"initialized": true,
 			"props": {
@@ -12,17 +12,13 @@
 					"6e05-4fe0-e680-203d"
 				],
 				"name": "provider_search",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"backgroundColor": "rgba( 248, 248, 248, 1 )",
-				"flexProps": {
-					"justifyContent": "SPACE_AROUND"
-				},
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
 			"version": "6.7.1"
@@ -140,6 +136,7 @@
 					"flexGrow": 1
 				},
 				"height": null,
+				"paddingBottom": 10,
 				"width": null
 			}
 		},
@@ -550,7 +547,7 @@
 			}
 		},
 		{
-			"className": ".switch",
+			"className": ".switch #ProviderSearchPage.switch",
 			"id": "f5d2-204a-228a-9a6f",
 			"props": {
 				"children": [],
@@ -560,18 +557,11 @@
 			},
 			"type": "Switch",
 			"userProps": {
-				"flexProps": {
-					"alignSelf": "CENTER"
-				},
-				"height": 20,
-				"thumbOnColor": "rgba( 136, 62, 240, 1 )",
-				"toggle": true,
-				"toggleOnColor": "rgba( 214, 190, 249, 1 )",
-				"width": 51.000001258456834
+				"toggle": true
 			}
 		},
 		{
-			"className": ".button",
+			"className": ".button #ProviderSearchPage.searchButton",
 			"id": "36db-a9f1-3ad9-b3ec",
 			"props": {
 				"children": [],
@@ -582,20 +572,8 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"backgroundColor": "rgba( 136, 62, 240, 1 )",
-				"font": {
-					"size": 18,
-					"bold": false,
-					"italic": false,
-					"family": "Avenir",
-					"style": "Medium"
-				},
-				"height": 40,
-				"marginLeft": 20,
-				"marginRight": 20,
 				"text": "Find",
-				"usePageVariable": true,
-				"width": null
+				"usePageVariable": true
 			}
 		}
 	]

@@ -3,13 +3,13 @@
 */
 const extend = require('js-base/core/extend');
 const MapView = require('sf-core/ui/mapview');
-const Color = require('sf-core/ui/color');
 const Image = require('sf-core/ui/image');
 const Router = require("sf-core/ui/router");
 const Common = require("../lib/common");
 const System = require("sf-core/device/system");
 const ProviderDesign = require('ui/ui_provider');
 const Application = require("sf-core/application");
+const config = require("../settings.json").config;
 
 const Provider = extend(ProviderDesign)(
   // Constructor
@@ -21,19 +21,19 @@ const Provider = extend(ProviderDesign)(
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 
-    this.button1.onPress = () => Common.callPhone("+19000000");
+    this.button1.onPress = () => Common.callPhone("19000000");
     this.button2.onPress = () => {
       if (System.OS === "Android") {
         Application.call("https://www.google.com/maps/dir/", {
           "api": "1",
           "travelmode": "walking",
           "dir_action": "navigate",
-          "destination": " 37.4488259,-122.1600047",
+          "destination": "37.4488259,-122.1600047",
         });
       }
       else {
         Application.call("http://maps.apple.com/", {
-          "daddr": " 37.4488259,-122.1600047",
+          "daddr": "37.4488259,-122.1600047",
           "dirflg": "w"
         });
       }
@@ -78,7 +78,7 @@ const renderMap = (page) => {
         latitude: 37.4488259,
         longitude: -122.1600047
       },
-      image: Image.createFromFile("images://map_pin.png", 150, 150),
+      image: config.theme.currentTheme == 'helloTheme' ? Image.createFromFile("images://map_pin.png", 150, 150) : Image.createFromFile("images://map_pin_orange.png", 150, 150),
     });
     mapView1.addPin(myPin);
   }

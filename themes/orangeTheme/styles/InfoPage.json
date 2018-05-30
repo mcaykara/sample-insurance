@@ -1,10 +1,10 @@
 {
   "#InfoPage": {
     ".page": {
-      "backgroundColor": "#F8F8F8"
+      "backgroundColor": "#F2ECE2"
     },
      ".callUsButton": {
-      "textColor": "#883EF0"
+      "textColor": "#22CFC5"
     },
     ".title": {
         "visible": true,
@@ -66,9 +66,9 @@
         }
     },
     ".switch": {
-      "thumbOffColor": "#883EF0",
-      "thumbOnColor": "#883EF0",
-      "toggleOnColor": "#D6BEF9",
+      "thumbOffColor": "#22CFC5",
+      "thumbOnColor": "#22CFC5",
+      "toggleOnColor": "#C7F3F0",
       "alpha": 1,
       "minHeight": 31,
       "minWidth": 51,
