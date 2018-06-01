@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".page",
+			"className": ".page #InfoPage.page",
 			"id": "adc8-6be9-6867-6270",
 			"initialized": true,
 			"props": {
@@ -12,14 +12,13 @@
 					"622b-b4b3-de70-7e5e"
 				],
 				"name": "info",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"backgroundColor": "rgba( 248, 248, 248, 1 )",
-				"orientation": "AUTO",
+				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
 			"version": "6.7.1"
@@ -200,8 +199,8 @@
 			"id": "12bc-82c2-79d8-018f",
 			"props": {
 				"children": [
-					"4cbd-0631-bbda-e8b0",
-					"e50c-4b6e-f80f-3893"
+					"bde8-e4b1-2096-4e5d",
+					"4cbd-0631-bbda-e8b0"
 				],
 				"name": "row_1",
 				"parent": "622b-b4b3-de70-7e5e"
@@ -220,32 +219,31 @@
 			}
 		},
 		{
-			"className": "#InfoPage.listItemTitle",
+			"className": "#InfoPage.listItemTitle #InfoPage.callUsButton",
 			"id": "4cbd-0631-bbda-e8b0",
-			"props": {
-				"children": [],
-				"name": "callUsTitle",
-				"parent": "12bc-82c2-79d8-018f",
-				"text": "Call Us",
-				"usePageVariable": true
-			},
-			"type": "TextView",
-			"userProps": {}
-		},
-		{
-			"className": "#InfoPage.listItemIcon",
-			"id": "e50c-4b6e-f80f-3893",
 			"props": {
 				"children": [],
 				"name": "icon2",
 				"parent": "12bc-82c2-79d8-018f",
+				"text": "",
 				"usePageVariable": true
 			},
-			"type": "ImageView",
+			"type": "TextView",
 			"userProps": {
-				"height": null,
-				"image": "phone.png",
-				"usePageVariable": true,
+				"flexProps": {
+					"flexGrow": null,
+					"alignSelf": "CENTER"
+				},
+				"font": {
+					"size": 24,
+					"bold": false,
+					"italic": false,
+					"family": "FontAwesome5FreeSolid",
+					"weight": "Multiple"
+				},
+				"height": 35,
+				"text": "",
+				"textAlignment": "MIDCENTER",
 				"width": 35
 			}
 		},
@@ -266,7 +264,7 @@
 			"props": {
 				"children": [
 					"f859-8ab9-681d-d26b",
-					"6c56-22e2-ef96-b3b2"
+					"81e9-4cce-63bc-5124"
 				],
 				"name": "row_2",
 				"parent": "622b-b4b3-de70-7e5e"
@@ -295,23 +293,9 @@
 				"usePageVariable": true
 			},
 			"type": "TextView",
-			"userProps": {}
-		},
-		{
-			"className": "#InfoPage.listItemIcon",
-			"id": "6c56-22e2-ef96-b3b2",
-			"props": {
-				"children": [],
-				"name": "icon3",
-				"parent": "88df-4898-11ed-babf",
-				"usePageVariable": true
-			},
-			"type": "ImageView",
 			"userProps": {
-				"height": null,
-				"image": "email.png",
-				"usePageVariable": true,
-				"width": 35
+				"html": "Send Us a Message",
+				"text": "Send Us a Message"
 			}
 		},
 		{
@@ -360,7 +344,10 @@
 				"usePageVariable": true
 			},
 			"type": "TextView",
-			"userProps": {}
+			"userProps": {
+				"html": "Remember Me",
+				"text": "Remember Me"
+			}
 		},
 		{
 			"className": "#InfoPage.divider",
@@ -380,16 +367,11 @@
 				"children": [],
 				"name": "switch1",
 				"parent": "21eb-24c0-e0d9-88d9",
-				"toggle": false
+				"toggle": true
 			},
 			"type": "Switch",
 			"userProps": {
-				"flexProps": {
-					"alignSelf": "CENTER"
-				},
-				"minHeight": 40,
-				"toggle": false,
-				"toggleOnColor": "rgba( 214, 190, 249, 1 )",
+				"toggle": true,
 				"width": null
 			}
 		},
@@ -437,16 +419,12 @@
 				"children": [],
 				"name": "fingerprintSwitch",
 				"parent": "3cec-8d8f-d11e-f400",
-				"toggle": false,
+				"toggle": true,
 				"usePageVariable": true
 			},
 			"type": "Switch",
 			"userProps": {
-				"flexProps": {
-					"alignSelf": "CENTER"
-				},
-				"toggle": false,
-				"toggleOnColor": "rgba( 214, 190, 249, 1 )",
+				"toggle": true,
 				"usePageVariable": true,
 				"width": null
 			}
@@ -495,16 +473,12 @@
 				"children": [],
 				"name": "notificationsSwitch",
 				"parent": "0249-7bfd-7156-5282",
-				"toggle": true,
+				"toggle": false,
 				"usePageVariable": true
 			},
 			"type": "Switch",
 			"userProps": {
-				"flexProps": {
-					"alignSelf": "CENTER"
-				},
-				"toggle": true,
-				"toggleOnColor": "rgba( 214, 190, 249, 1 )",
+				"toggle": false,
 				"usePageVariable": true,
 				"width": null
 			}
@@ -620,6 +594,7 @@
 			},
 			"type": "TextView",
 			"userProps": {
+				"html": "Theme",
 				"text": "Theme"
 			}
 		},
@@ -652,12 +627,12 @@
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},
-				"height": 35,
+				"height": 30,
 				"left": 0,
 				"marginLeft": 5,
 				"top": 0,
 				"usePageVariable": true,
-				"width": 35
+				"width": 30
 			}
 		},
 		{
@@ -677,12 +652,46 @@
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},
-				"height": 35,
+				"height": 30,
 				"left": 0,
 				"marginLeft": 5,
 				"top": 0,
 				"usePageVariable": true,
-				"width": 35
+				"width": 30
+			}
+		},
+		{
+			"className": "#InfoPage.listItemTitle",
+			"id": "bde8-e4b1-2096-4e5d",
+			"props": {
+				"children": [],
+				"name": "callUsTitle",
+				"parent": "12bc-82c2-79d8-018f",
+				"text": "Call Us",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {}
+		},
+		{
+			"className": "#InfoPage.listItemIcon #InfoPage.callUsButton",
+			"id": "81e9-4cce-63bc-5124",
+			"props": {
+				"children": [],
+				"name": "icon3",
+				"parent": "88df-4898-11ed-babf",
+				"text": "",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"font": {
+					"family": "FontAwesome5FreeSolid",
+					"bold": false,
+					"italic": false,
+					"size": 24
+				},
+				"text": ""
 			}
 		}
 	]
