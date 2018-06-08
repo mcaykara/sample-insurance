@@ -17,13 +17,13 @@ const Notifications = require("sf-core/notifications");
 Notifications.registerForPushNotifications(function(e) {
   Data.setStringVariable('pushToken', e.token);
 }, function() {
-  alert("Push Failed:");
   console.log("Register failed.");
 });
 
 Application.onReceivedNotification = function(e) {
-  alert("Notification: " + typeof e);
-  alert("Notification: " + JSON.stringify(e.remote));
+  Router.go(e.remote.page);
+    alert(JSON.stringify(e, null, 2));
+    alert(1);
 }
 
 if (!Data.getBooleanVariable('instaBugLoaded')) {

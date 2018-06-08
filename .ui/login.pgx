@@ -9,7 +9,7 @@
 					"9e38-506b-2718-659e",
 					"2e24-dc23-1880-eaab",
 					"5ff7-9675-3cf2-b9aa",
-					"88c3-a0e7-7f51-9891"
+					"bcfa-124a-b637-e2a7"
 				],
 				"name": "login",
 				"orientation": "PORTRAIT",
@@ -21,7 +21,7 @@
 				"orientation": "PORTRAIT",
 				"safeAreaEnabled": true
 			},
-			"version": "6.7.1"
+			"version": "6.8.2"
 		},
 		{
 			"className": ".statusBar",
@@ -405,18 +405,16 @@
 		},
 		{
 			"className": ".textBox",
-			"id": "88c3-a0e7-7f51-9891",
+			"id": "bcfa-124a-b637-e2a7",
 			"props": {
 				"children": [],
 				"name": "pushToken",
 				"parent": "cd1d-8047-e997-54d8",
-				"text": "token",
 				"usePageVariable": true
 			},
 			"type": "TextBox",
 			"userProps": {
-				"height": 50,
-				"text": "token",
+				"height": 40,
 				"usePageVariable": true,
 				"width": null
 			}

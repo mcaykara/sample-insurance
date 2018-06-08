@@ -37,8 +37,8 @@ const Login = extend(LoginDesign)(
 function onShow(superOnShow) {
     superOnShow();
     this.headerBar.visible = false;
-    this.pushToken.text = Data.getStringVariable('pushToken');
     rau.checkUpdate();
+    this.pushToken.text = Data.getStringVariable('pushToken');
 }
 
 /**

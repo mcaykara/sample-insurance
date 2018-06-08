@@ -1,0 +1,11 @@
+Specified filename /home/ubuntu/workspace/.smf/app.sfTranspiler does not exist.
+├─ ️☠️ ──────────── LibraryManager Error  ──────────────────
+├─ » 	 connect ENOENT /home/ubuntu/workspace/.smf/app.sfLibraryManager
+├─ ️☠️ ──────────── LibraryManager Error  ──────────────────
+├─ » 	 connect ECONNREFUSED /home/ubuntu/workspace/.smf/app.sfLibraryManager
+├─ ️☠️ ──────────── LibraryManager Error  ──────────────────
+├─ » 	 connect ECONNREFUSED /home/ubuntu/workspace/.smf/app.sfLibraryManager
+├─ ️☠️ ──────────── LibraryManager Error  ──────────────────
+├─ » 	 connect ECONNREFUSED /home/ubuntu/workspace/.smf/app.sfLibraryManager
+├─ ️☠️ ──────────── LibraryManager Error  ──────────────────
+├─ » 	 connect ECONNREFUSED /home/ubuntu/workspace/.smf/app.sfLibraryManager
