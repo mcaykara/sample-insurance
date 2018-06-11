@@ -403,3 +403,57 @@ Config Watcher Event:  change /home/ubuntu/workspace/scripts/settings.json
 ├─ 📄  generated ui/ui_my_id.js
 ├─ 📄  generated ui/ui_providers.js
 ├─ 📄  generated ui/ui_providers_map.js
+├─ 🔔  pgx -> change /home/ubuntu/workspace/.ui/login.pgx
+├─ 📄  generated ui/ui_login.js
+├─ 🔔  pgx -> change /home/ubuntu/workspace/.ui/login.pgx
+├─ 📄  generated ui/ui_login.js
+checkstart starting...
+checkstart if in
+Smartface transpiler is up and running...
+Config Watcher Event:  add /home/ubuntu/workspace/scripts/settings.json
+├─ ⚙️  ────────────────────────── Configuration ───────────────────────────────────┤
+├─ ⚫  LIBRARY_FILE_NAME     __library__.pgx
+├─ ⚫  LIBRARY_PAGE_NAME     __library__
+├─ ⚫  MODULES_PAGE_NAME     __modules__
+├─ ⚫  MODULES_FILE_NAME     .__modules__.pgx
+├─ ⚫  WORKSPACE_PATH        /home/ubuntu/workspace
+├─ ⚫  PGX_FOLDER            /home/ubuntu/workspace/.ui
+├─ ⚫  UI_FOLDER             /home/ubuntu/workspace/scripts/ui
+├─ ⚫  PAGES_FOLDER          /home/ubuntu/workspace/scripts/pages
+├─ ⚫  LIBRARY_UI_FOLDER     /home/ubuntu/workspace/scripts/node_modules/library
+├─ ⚫  LIBRARY_USER_FOLDER   /home/ubuntu/workspace/scripts/components
+├─ ⚫  THEMES_FOLDER         /home/ubuntu/workspace/themes
+├─ ⚫  THEMES_DIST_FOLDER    /home/ubuntu/workspace/scripts/themes
+├─
+├─ 📦  Generate Bundle --> --------------- -> defaultTheme.json
+├─ 📦  Generate Bundle --> defaultTheme -> helloTheme.json
+├─ 📦  Generate Bundle --> helloTheme -> orangeTheme.json
+Config Watcher Event:  change /home/ubuntu/workspace/scripts/settings.json
+├─ ⚙️  ────────────────────────── Configuration ───────────────────────────────────┤
+├─ ⚫  LIBRARY_FILE_NAME     __library__.pgx
+├─ ⚫  LIBRARY_PAGE_NAME     __library__
+├─ ⚫  MODULES_PAGE_NAME     __modules__
+├─ ⚫  MODULES_FILE_NAME     .__modules__.pgx
+├─ ⚫  WORKSPACE_PATH        /home/ubuntu/workspace
+├─ ⚫  PGX_FOLDER            /home/ubuntu/workspace/.ui
+├─ ⚫  UI_FOLDER             /home/ubuntu/workspace/scripts/ui
+├─ ⚫  PAGES_FOLDER          /home/ubuntu/workspace/scripts/pages
+├─ ⚫  LIBRARY_UI_FOLDER     /home/ubuntu/workspace/scripts/node_modules/library
+├─ ⚫  LIBRARY_USER_FOLDER   /home/ubuntu/workspace/scripts/components
+├─ ⚫  THEMES_FOLDER         /home/ubuntu/workspace/themes
+├─ ⚫  THEMES_DIST_FOLDER    /home/ubuntu/workspace/scripts/themes
+├─
+├─ 📦  Generate Bundle --> --------------- -> defaultTheme.json
+├─ 📦  Generate Bundle --> defaultTheme -> helloTheme.json
+├─ 📦  Generate Bundle --> helloTheme -> orangeTheme.json
+├─ 📗  generated Divider.js
+├─ 📄  generated ui/ui_claims.js
+├─ 📄  generated ui/ui_home.js
+├─ 📄  generated ui/ui_info.js
+├─ 📄  generated ui/ui_library.js
+├─ 📄  generated ui/ui_login.js
+├─ 📄  generated ui/ui_my_id.js
+├─ 📄  generated ui/ui_provider.js
+├─ 📄  generated ui/ui_provider_search.js
+├─ 📄  generated ui/ui_providers.js
+├─ 📄  generated ui/ui_providers_map.js

@@ -46,3 +46,9 @@ Init  browser
 ReadDone:  browser   988 B
 ReadTask  transpiler
 DISCONNECTED  transpiler
+DISCONNECTED  browser
+Smartface libraryManager is up and running...
+Init  browser
+ReadDone:  browser   988 B
+ReadTask  transpiler
+DISCONNECTED  transpiler

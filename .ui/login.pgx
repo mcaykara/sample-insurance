@@ -405,6 +405,7 @@
 		},
 		{
 			"className": ".textBox",
+			"hiddenComponent": false,
 			"id": "bcfa-124a-b637-e2a7",
 			"props": {
 				"children": [],
@@ -416,6 +417,7 @@
 			"userProps": {
 				"height": 40,
 				"usePageVariable": true,
+				"visible": false,
 				"width": null
 			}
 		}

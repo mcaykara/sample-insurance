@@ -1,4 +1,4 @@
-SMF.i18n.defineLanguage('tr', {
+SMF.i18n.defineLanguage('ar', {
 	"cancel": "İptal",
 	"copy": "Kopyala",
 	"done": "Yapıldı",

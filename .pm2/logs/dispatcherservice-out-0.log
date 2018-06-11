@@ -2174,3 +2174,10 @@ Trying to connect for UI browser
 **CONNECTING** UI 7216993a-7522-7a43-32f3-831e8ecbfc26
 [UI] UIService init
 ws onClose
+ws onClose
+[HTTP] Server listening on 8081
+**READY**
+**NEW CONNECTION**
+Trying to connect for UI browser
+**CONNECTING** UI d9cea641-24f4-41cf-fa2f-75d009b00bd1
+[UI] UIService init

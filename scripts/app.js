@@ -22,8 +22,6 @@ Notifications.registerForPushNotifications(function(e) {
 
 Application.onReceivedNotification = function(e) {
   Router.go(e.remote.page);
-    alert(JSON.stringify(e, null, 2));
-    alert(1);
 }
 
 if (!Data.getBooleanVariable('instaBugLoaded')) {
