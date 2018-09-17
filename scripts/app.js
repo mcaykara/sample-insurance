@@ -41,7 +41,7 @@ Application.onUnhandledError = function(e) {
 
 // Define routes and go to initial page of application
 const navigator = new Navigator();
-navigator.add("login", require("./pages/login"));
+navigator.add("login", "pages/login");
 navigator.go("login");
 
 global.tabBar = null;
@@ -53,7 +53,7 @@ global.tabBar = new BottomTabBar({
 global.tabBar.children = {};
 
 const homeNavigator = new Navigator();
-homeNavigator.add("index", require("./pages/home"));
+homeNavigator.add("index", "pages/home");
 homeNavigator.go("index");
 global.tabBar.children["home"] = new TabBarItem({
     title: lang["tabs"]["home"],
@@ -62,7 +62,7 @@ global.tabBar.children["home"] = new TabBarItem({
 });
 
 const myIDNavigator = new Navigator();
-myIDNavigator.add("index", require("./pages/my_id"));
+myIDNavigator.add("index", "pages/my_id");
 myIDNavigator.go("index");
 global.tabBar.children["my_id"] = new TabBarItem({
     title: lang["tabs"]["my_id"],
@@ -71,7 +71,7 @@ global.tabBar.children["my_id"] = new TabBarItem({
 });
 
 const claimsNavigator = new Navigator();
-claimsNavigator.add("index", require("./pages/claims"));
+claimsNavigator.add("index", "pages/claims");
 claimsNavigator.go("index");
 global.tabBar.children["claims"] = new TabBarItem({
     title: lang["tabs"]["claims"],
@@ -80,10 +80,10 @@ global.tabBar.children["claims"] = new TabBarItem({
 });
 
 const providerSearchNavigator = new Navigator();
-providerSearchNavigator.add("index", require("./pages/provider_search"));
-providerSearchNavigator.add("providers", require("./pages/providers"));
-providerSearchNavigator.add("providers_map", require("./pages/providers_map"));
-providerSearchNavigator.add("provider", require("./pages/provider"));
+providerSearchNavigator.add("index", "pages/provider_search");
+providerSearchNavigator.add("providers", "pages/providers");
+providerSearchNavigator.add("providers_map", "pages/providers_map");
+providerSearchNavigator.add("provider", "pages/provider");
 providerSearchNavigator.go("index");
 global.tabBar.children["provider_search"] = new TabBarItem({
     title: lang["tabs"]["providers"],
@@ -92,8 +92,8 @@ global.tabBar.children["provider_search"] = new TabBarItem({
 });
 
 const infoNavigator = new Navigator();
-infoNavigator.add("index", require("./pages/info"));
-infoNavigator.add("library", require("./pages/library"));
+infoNavigator.add("index", "pages/info");
+infoNavigator.add("library", "pages/library");
 infoNavigator.go("index");
 global.tabBar.children["info"] = new TabBarItem({
     title: lang["tabs"]["info"],

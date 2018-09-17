@@ -27,7 +27,7 @@
 				"paddingTop": 0,
 				"safeAreaEnabled": false
 			},
-			"version": "6.8.2"
+			"version": "6.10.2"
 		},
 		{
 			"className": ".statusBar",

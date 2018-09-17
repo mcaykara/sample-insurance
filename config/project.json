@@ -68,7 +68,7 @@
                         "active": true
                     }
                 },
-                "playerPath": "players/ios/player-6.7.1-beta.433.zip"
+                "playerPath": "players/player-6.8.1-beta.504.zip"
             },
             "android": {
                 "scripts": "scripts",
@@ -89,7 +89,7 @@
                         "active": false
                     }
                 },
-                "playerPath": "players/android/player-6.7.0-beta.5.zip"
+                "playerPath": "players/Android/player-6.8.2-beta.2.zip"
             },
             "keys": {
                 "project3DesKey": "atm9RnU5nYn3xcdipRnVKrRLiwP4B7b0",

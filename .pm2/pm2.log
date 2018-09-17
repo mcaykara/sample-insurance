@@ -1,144 +1,48 @@
-[2018-06-05 10:27:53] PM2 log: ===============================================================================
-[2018-06-05 10:27:53] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
-[2018-06-05 10:27:53] PM2 log: Time                 : Tue Jun 05 2018 10:27:53 GMT+0000 (UTC)
-[2018-06-05 10:27:53] PM2 log: PM2 version          : 2.10.3
-[2018-06-05 10:27:53] PM2 log: Node.js version      : 6.9.2
-[2018-06-05 10:27:53] PM2 log: Current arch         : x64
-[2018-06-05 10:27:53] PM2 log: PM2 home             : /home/ubuntu/workspace/.pm2
-[2018-06-05 10:27:53] PM2 log: PM2 PID file         : /home/ubuntu/workspace/.pm2/pm2.pid
-[2018-06-05 10:27:53] PM2 log: RPC socket file      : /home/ubuntu/workspace/.pm2/rpc.sock
-[2018-06-05 10:27:53] PM2 log: BUS socket file      : /home/ubuntu/workspace/.pm2/pub.sock
-[2018-06-05 10:27:53] PM2 log: Application log path : /home/ubuntu/workspace/.pm2/logs
-[2018-06-05 10:27:53] PM2 log: Process dump file    : /home/ubuntu/workspace/.pm2/dump.pm2
-[2018-06-05 10:27:53] PM2 log: Concurrent actions   : 2
-[2018-06-05 10:27:53] PM2 log: SIGTERM timeout      : 1600
-[2018-06-05 10:27:53] PM2 log: ===============================================================================
-[2018-06-05 10:27:53] PM2 log: [Watch] Start watching dispatcherservice
-[2018-06-05 10:27:53] PM2 log: Starting execution sequence in -fork mode- for app name:dispatcherservice id:0
-[2018-06-05 10:27:54] PM2 log: App name:dispatcherservice id:0 online
-[2018-06-05 10:28:01] PM2 log: [Watch] Start watching transpilerservice
-[2018-06-05 10:28:01] PM2 log: Starting execution sequence in -fork mode- for app name:transpilerservice id:1
-[2018-06-05 10:28:01] PM2 log: App name:transpilerservice id:1 online
-[2018-06-05 10:28:15] PM2 log: [Watch] Start watching libraryservice
-[2018-06-05 10:28:15] PM2 log: Starting execution sequence in -fork mode- for app name:libraryservice id:2
-[2018-06-05 10:28:15] PM2 log: App name:libraryservice id:2 online
-[2018-06-06 13:23:07] PM2 log: ===============================================================================
-[2018-06-06 13:23:07] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
-[2018-06-06 13:23:07] PM2 log: Time                 : Wed Jun 06 2018 13:23:07 GMT+0000 (UTC)
-[2018-06-06 13:23:07] PM2 log: PM2 version          : 2.10.3
-[2018-06-06 13:23:07] PM2 log: Node.js version      : 6.9.2
-[2018-06-06 13:23:07] PM2 log: Current arch         : x64
-[2018-06-06 13:23:07] PM2 log: PM2 home             : /home/ubuntu/workspace/.pm2
-[2018-06-06 13:23:07] PM2 log: PM2 PID file         : /home/ubuntu/workspace/.pm2/pm2.pid
-[2018-06-06 13:23:07] PM2 log: RPC socket file      : /home/ubuntu/workspace/.pm2/rpc.sock
-[2018-06-06 13:23:07] PM2 log: BUS socket file      : /home/ubuntu/workspace/.pm2/pub.sock
-[2018-06-06 13:23:07] PM2 log: Application log path : /home/ubuntu/workspace/.pm2/logs
-[2018-06-06 13:23:07] PM2 log: Process dump file    : /home/ubuntu/workspace/.pm2/dump.pm2
-[2018-06-06 13:23:07] PM2 log: Concurrent actions   : 2
-[2018-06-06 13:23:07] PM2 log: SIGTERM timeout      : 1600
-[2018-06-06 13:23:07] PM2 log: ===============================================================================
-[2018-06-06 13:23:07] PM2 log: [Watch] Start watching dispatcherservice
-[2018-06-06 13:23:07] PM2 log: Starting execution sequence in -fork mode- for app name:dispatcherservice id:0
-[2018-06-06 13:23:07] PM2 log: App name:dispatcherservice id:0 online
-[2018-06-06 13:23:15] PM2 log: [Watch] Start watching transpilerservice
-[2018-06-06 13:23:15] PM2 log: Starting execution sequence in -fork mode- for app name:transpilerservice id:1
-[2018-06-06 13:23:15] PM2 log: App name:transpilerservice id:1 online
-[2018-06-06 13:23:25] PM2 log: [Watch] Start watching libraryservice
-[2018-06-06 13:23:25] PM2 log: Starting execution sequence in -fork mode- for app name:libraryservice id:2
-[2018-06-06 13:23:26] PM2 log: App name:libraryservice id:2 online
-[2018-06-06 19:39:34] PM2 log: ===============================================================================
-[2018-06-06 19:39:34] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
-[2018-06-06 19:39:34] PM2 log: Time                 : Wed Jun 06 2018 19:39:34 GMT+0000 (UTC)
-[2018-06-06 19:39:34] PM2 log: PM2 version          : 2.10.3
-[2018-06-06 19:39:34] PM2 log: Node.js version      : 6.9.2
-[2018-06-06 19:39:34] PM2 log: Current arch         : x64
-[2018-06-06 19:39:34] PM2 log: PM2 home             : /home/ubuntu/workspace/.pm2
-[2018-06-06 19:39:34] PM2 log: PM2 PID file         : /home/ubuntu/workspace/.pm2/pm2.pid
-[2018-06-06 19:39:34] PM2 log: RPC socket file      : /home/ubuntu/workspace/.pm2/rpc.sock
-[2018-06-06 19:39:34] PM2 log: BUS socket file      : /home/ubuntu/workspace/.pm2/pub.sock
-[2018-06-06 19:39:34] PM2 log: Application log path : /home/ubuntu/workspace/.pm2/logs
-[2018-06-06 19:39:34] PM2 log: Process dump file    : /home/ubuntu/workspace/.pm2/dump.pm2
-[2018-06-06 19:39:34] PM2 log: Concurrent actions   : 2
-[2018-06-06 19:39:34] PM2 log: SIGTERM timeout      : 1600
-[2018-06-06 19:39:34] PM2 log: ===============================================================================
-[2018-06-06 19:39:34] PM2 log: [Watch] Start watching dispatcherservice
-[2018-06-06 19:39:34] PM2 log: Starting execution sequence in -fork mode- for app name:dispatcherservice id:0
-[2018-06-06 19:39:35] PM2 log: App name:dispatcherservice id:0 online
-[2018-06-06 19:39:42] PM2 log: [Watch] Start watching transpilerservice
-[2018-06-06 19:39:42] PM2 log: Starting execution sequence in -fork mode- for app name:transpilerservice id:1
-[2018-06-06 19:39:42] PM2 log: App name:transpilerservice id:1 online
-[2018-06-06 19:39:50] PM2 log: [Watch] Start watching libraryservice
-[2018-06-06 19:39:50] PM2 log: Starting execution sequence in -fork mode- for app name:libraryservice id:2
-[2018-06-06 19:39:50] PM2 log: App name:libraryservice id:2 online
-[2018-06-07 12:07:08] PM2 log: ===============================================================================
-[2018-06-07 12:07:08] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
-[2018-06-07 12:07:08] PM2 log: Time                 : Thu Jun 07 2018 12:07:08 GMT+0000 (UTC)
-[2018-06-07 12:07:08] PM2 log: PM2 version          : 2.10.3
-[2018-06-07 12:07:08] PM2 log: Node.js version      : 6.9.2
-[2018-06-07 12:07:08] PM2 log: Current arch         : x64
-[2018-06-07 12:07:08] PM2 log: PM2 home             : /home/ubuntu/workspace/.pm2
-[2018-06-07 12:07:08] PM2 log: PM2 PID file         : /home/ubuntu/workspace/.pm2/pm2.pid
-[2018-06-07 12:07:08] PM2 log: RPC socket file      : /home/ubuntu/workspace/.pm2/rpc.sock
-[2018-06-07 12:07:08] PM2 log: BUS socket file      : /home/ubuntu/workspace/.pm2/pub.sock
-[2018-06-07 12:07:08] PM2 log: Application log path : /home/ubuntu/workspace/.pm2/logs
-[2018-06-07 12:07:08] PM2 log: Process dump file    : /home/ubuntu/workspace/.pm2/dump.pm2
-[2018-06-07 12:07:08] PM2 log: Concurrent actions   : 2
-[2018-06-07 12:07:08] PM2 log: SIGTERM timeout      : 1600
-[2018-06-07 12:07:08] PM2 log: ===============================================================================
-[2018-06-07 12:07:08] PM2 log: [Watch] Start watching dispatcherservice
-[2018-06-07 12:07:08] PM2 log: Starting execution sequence in -fork mode- for app name:dispatcherservice id:0
-[2018-06-07 12:07:08] PM2 log: App name:dispatcherservice id:0 online
-[2018-06-07 12:07:16] PM2 log: [Watch] Start watching transpilerservice
-[2018-06-07 12:07:16] PM2 log: Starting execution sequence in -fork mode- for app name:transpilerservice id:1
-[2018-06-07 12:07:17] PM2 log: App name:transpilerservice id:1 online
-[2018-06-07 12:07:30] PM2 log: [Watch] Start watching libraryservice
-[2018-06-07 12:07:30] PM2 log: Starting execution sequence in -fork mode- for app name:libraryservice id:2
-[2018-06-07 12:07:30] PM2 log: App name:libraryservice id:2 online
-[2018-06-08 08:59:36] PM2 log: ===============================================================================
-[2018-06-08 08:59:36] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
-[2018-06-08 08:59:36] PM2 log: Time                 : Fri Jun 08 2018 08:59:36 GMT+0000 (UTC)
-[2018-06-08 08:59:36] PM2 log: PM2 version          : 2.10.3
-[2018-06-08 08:59:36] PM2 log: Node.js version      : 6.9.2
-[2018-06-08 08:59:36] PM2 log: Current arch         : x64
-[2018-06-08 08:59:36] PM2 log: PM2 home             : /home/ubuntu/workspace/.pm2
-[2018-06-08 08:59:36] PM2 log: PM2 PID file         : /home/ubuntu/workspace/.pm2/pm2.pid
-[2018-06-08 08:59:36] PM2 log: RPC socket file      : /home/ubuntu/workspace/.pm2/rpc.sock
-[2018-06-08 08:59:36] PM2 log: BUS socket file      : /home/ubuntu/workspace/.pm2/pub.sock
-[2018-06-08 08:59:36] PM2 log: Application log path : /home/ubuntu/workspace/.pm2/logs
-[2018-06-08 08:59:36] PM2 log: Process dump file    : /home/ubuntu/workspace/.pm2/dump.pm2
-[2018-06-08 08:59:36] PM2 log: Concurrent actions   : 2
-[2018-06-08 08:59:36] PM2 log: SIGTERM timeout      : 1600
-[2018-06-08 08:59:36] PM2 log: ===============================================================================
-[2018-06-08 08:59:36] PM2 log: [Watch] Start watching dispatcherservice
-[2018-06-08 08:59:36] PM2 log: Starting execution sequence in -fork mode- for app name:dispatcherservice id:0
-[2018-06-08 08:59:36] PM2 log: App name:dispatcherservice id:0 online
-[2018-06-08 08:59:43] PM2 log: [Watch] Start watching transpilerservice
-[2018-06-08 08:59:43] PM2 log: Starting execution sequence in -fork mode- for app name:transpilerservice id:1
-[2018-06-08 08:59:43] PM2 log: App name:transpilerservice id:1 online
-[2018-06-08 08:59:50] PM2 log: [Watch] Start watching libraryservice
-[2018-06-08 08:59:50] PM2 log: Starting execution sequence in -fork mode- for app name:libraryservice id:2
-[2018-06-08 08:59:50] PM2 log: App name:libraryservice id:2 online
-[2018-06-11 06:23:20] PM2 log: ===============================================================================
-[2018-06-11 06:23:20] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
-[2018-06-11 06:23:20] PM2 log: Time                 : Mon Jun 11 2018 06:23:20 GMT+0000 (UTC)
-[2018-06-11 06:23:20] PM2 log: PM2 version          : 2.10.3
-[2018-06-11 06:23:20] PM2 log: Node.js version      : 6.9.2
-[2018-06-11 06:23:20] PM2 log: Current arch         : x64
-[2018-06-11 06:23:20] PM2 log: PM2 home             : /home/ubuntu/workspace/.pm2
-[2018-06-11 06:23:20] PM2 log: PM2 PID file         : /home/ubuntu/workspace/.pm2/pm2.pid
-[2018-06-11 06:23:20] PM2 log: RPC socket file      : /home/ubuntu/workspace/.pm2/rpc.sock
-[2018-06-11 06:23:20] PM2 log: BUS socket file      : /home/ubuntu/workspace/.pm2/pub.sock
-[2018-06-11 06:23:20] PM2 log: Application log path : /home/ubuntu/workspace/.pm2/logs
-[2018-06-11 06:23:20] PM2 log: Process dump file    : /home/ubuntu/workspace/.pm2/dump.pm2
-[2018-06-11 06:23:20] PM2 log: Concurrent actions   : 2
-[2018-06-11 06:23:20] PM2 log: SIGTERM timeout      : 1600
-[2018-06-11 06:23:20] PM2 log: ===============================================================================
-[2018-06-11 06:23:20] PM2 log: [Watch] Start watching dispatcherservice
-[2018-06-11 06:23:20] PM2 log: Starting execution sequence in -fork mode- for app name:dispatcherservice id:0
-[2018-06-11 06:23:20] PM2 log: App name:dispatcherservice id:0 online
-[2018-06-11 06:23:24] PM2 log: [Watch] Start watching transpilerservice
-[2018-06-11 06:23:24] PM2 log: Starting execution sequence in -fork mode- for app name:transpilerservice id:1
-[2018-06-11 06:23:24] PM2 log: App name:transpilerservice id:1 online
-[2018-06-11 06:23:33] PM2 log: [Watch] Start watching libraryservice
-[2018-06-11 06:23:33] PM2 log: Starting execution sequence in -fork mode- for app name:libraryservice id:2
-[2018-06-11 06:23:33] PM2 log: App name:libraryservice id:2 online
+[2018-09-17 12:36:56] PM2 log: ===============================================================================
+[2018-09-17 12:36:56] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+[2018-09-17 12:36:56] PM2 log: Time                 : Mon Sep 17 2018 12:36:56 GMT+0000 (UTC)
+[2018-09-17 12:36:56] PM2 log: PM2 version          : 2.10.3
+[2018-09-17 12:36:56] PM2 log: Node.js version      : 6.9.2
+[2018-09-17 12:36:56] PM2 log: Current arch         : x64
+[2018-09-17 12:36:56] PM2 log: PM2 home             : /home/ubuntu/workspace/.pm2
+[2018-09-17 12:36:56] PM2 log: PM2 PID file         : /home/ubuntu/workspace/.pm2/pm2.pid
+[2018-09-17 12:36:56] PM2 log: RPC socket file      : /home/ubuntu/workspace/.pm2/rpc.sock
+[2018-09-17 12:36:56] PM2 log: BUS socket file      : /home/ubuntu/workspace/.pm2/pub.sock
+[2018-09-17 12:36:56] PM2 log: Application log path : /home/ubuntu/workspace/.pm2/logs
+[2018-09-17 12:36:56] PM2 log: Process dump file    : /home/ubuntu/workspace/.pm2/dump.pm2
+[2018-09-17 12:36:56] PM2 log: Concurrent actions   : 2
+[2018-09-17 12:36:56] PM2 log: SIGTERM timeout      : 1600
+[2018-09-17 12:36:56] PM2 log: ===============================================================================
+[2018-09-17 12:36:56] PM2 log: [Watch] Start watching libraryservice
+[2018-09-17 12:36:56] PM2 log: Starting execution sequence in -fork mode- for app name:libraryservice id:0
+[2018-09-17 12:36:56] PM2 log: App name:libraryservice id:0 online
+[2018-09-17 12:37:01] PM2 log: [Watch] Start watching dispatcherservice
+[2018-09-17 12:37:01] PM2 log: Starting execution sequence in -fork mode- for app name:dispatcherservice id:1
+[2018-09-17 12:37:01] PM2 log: App name:dispatcherservice id:1 online
+[2018-09-17 12:37:11] PM2 log: [Watch] Start watching transpilerservice
+[2018-09-17 12:37:11] PM2 log: Starting execution sequence in -fork mode- for app name:transpilerservice id:2
+[2018-09-17 12:37:11] PM2 log: App name:transpilerservice id:2 online
+[2018-09-17 18:09:55] PM2 log: ===============================================================================
+[2018-09-17 18:09:55] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+[2018-09-17 18:09:55] PM2 log: Time                 : Mon Sep 17 2018 18:09:55 GMT+0000 (UTC)
+[2018-09-17 18:09:55] PM2 log: PM2 version          : 2.10.3
+[2018-09-17 18:09:55] PM2 log: Node.js version      : 6.9.2
+[2018-09-17 18:09:55] PM2 log: Current arch         : x64
+[2018-09-17 18:09:55] PM2 log: PM2 home             : /home/ubuntu/workspace/.pm2
+[2018-09-17 18:09:55] PM2 log: PM2 PID file         : /home/ubuntu/workspace/.pm2/pm2.pid
+[2018-09-17 18:09:55] PM2 log: RPC socket file      : /home/ubuntu/workspace/.pm2/rpc.sock
+[2018-09-17 18:09:55] PM2 log: BUS socket file      : /home/ubuntu/workspace/.pm2/pub.sock
+[2018-09-17 18:09:55] PM2 log: Application log path : /home/ubuntu/workspace/.pm2/logs
+[2018-09-17 18:09:55] PM2 log: Process dump file    : /home/ubuntu/workspace/.pm2/dump.pm2
+[2018-09-17 18:09:55] PM2 log: Concurrent actions   : 2
+[2018-09-17 18:09:55] PM2 log: SIGTERM timeout      : 1600
+[2018-09-17 18:09:55] PM2 log: ===============================================================================
+[2018-09-17 18:09:55] PM2 log: [Watch] Start watching libraryservice
+[2018-09-17 18:09:55] PM2 log: Starting execution sequence in -fork mode- for app name:libraryservice id:0
+[2018-09-17 18:09:55] PM2 log: App name:libraryservice id:0 online
+[2018-09-17 18:10:02] PM2 log: [Watch] Start watching dispatcherservice
+[2018-09-17 18:10:02] PM2 log: Starting execution sequence in -fork mode- for app name:dispatcherservice id:1
+[2018-09-17 18:10:03] PM2 log: App name:dispatcherservice id:1 online
+[2018-09-17 18:10:11] PM2 log: [Watch] Start watching transpilerservice
+[2018-09-17 18:10:11] PM2 log: Starting execution sequence in -fork mode- for app name:transpilerservice id:2
+[2018-09-17 18:10:11] PM2 log: App name:transpilerservice id:2 online
